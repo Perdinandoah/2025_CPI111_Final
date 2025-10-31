@@ -37,10 +37,12 @@
   "resources":[
     {"id":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
+    {"id":{"name":"obj_enemyMouse","path":"objects/obj_enemyMouse/obj_enemyMouse.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
     {"id":{"name":"spr_backgroundTest","path":"sprites/spr_backgroundTest/spr_backgroundTest.yy",},},
     {"id":{"name":"spr_collider","path":"sprites/spr_collider/spr_collider.yy",},},
+    {"id":{"name":"spr_mousePlaceHolder","path":"sprites/spr_mousePlaceHolder/spr_mousePlaceHolder.yy",},},
     {"id":{"name":"spr_PlayerPlaceHolder","path":"sprites/spr_PlayerPlaceHolder/spr_PlayerPlaceHolder.yy",},},
   ],
   "resourceType":"GMProject",
