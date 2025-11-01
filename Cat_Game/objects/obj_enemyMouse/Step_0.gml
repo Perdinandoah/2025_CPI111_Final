@@ -55,17 +55,15 @@ if(bbox_right >= room_width || bbox_left <=0){
 //Roam and check for player
 if(state == 0){
 	//Check if x collision will occur
-	var predictedX = x - midWidth/5 - velocityX;
+	var predictedX = x + enemyDirection * (velocityX + midWidth/5);
 	if(!place_meeting(predictedX, y, obj_collidable)){
-		x -= velocityX;
+		x += (enemyDirection * velocityX);
+		image_xscale = enemyDirection;
 	}
 	else{
-		velocityX *= -1;
-		//flip sprite to movement direction
-		if(velocityX != 0 && (sign(image_xscale) != sign(velocityX))){
-			image_xscale *= -1;
+		enemyDirection *= -1;
 		}
-	}
+	
 	
 	if(distance_to_object(obj_player) < playerDistanceThreshold){
 		state = 1;
@@ -75,10 +73,12 @@ if(state == 0){
 //Hold ground and defend self
 else if(state == 1){
 	if(obj_player.x < x){
-		image_xscale = 1;
+		enemyDirection = -1;
+		image_xscale = enemyDirection;
 	}
 	else{
-		image_xscale = -1;
+		enemyDirection = 1;
+		image_xscale = enemyDirection;
 	}
 	if(distance_to_object(obj_player) > playerDistanceThreshold){
 		state = 0;

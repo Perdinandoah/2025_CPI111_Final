@@ -1,5 +1,7 @@
-//set angle
-image_xscale = 1;
+playerDirection = 1;
+
+image_xscale = playerDirection;
+
 //Check if x collision will occur
 var predictedX = x + midWidth/5 + velocityX;
 if(!place_meeting(predictedX, y, obj_collidable)){

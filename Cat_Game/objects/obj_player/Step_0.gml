@@ -44,9 +44,3 @@ if(bbox_bottom >= room_height){
 if(velocityY >= 0 && inAir = true){
 	isFalling = true;
 }
-
-
-//if player is out of room
-if(bbox_right >= room_width || bbox_left <=0){
-	velocityX = -velocityX;
-}
