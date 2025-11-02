@@ -1,7 +1,6 @@
 velocityY += obj_controller.gameGravity;
 
-
-//check if y collision will occur
+//check if y collision will occur----------------------------------------------------------
 var predictedY = y + velocityY;
 if(!place_meeting(x, predictedY, obj_collidable)){
 	y += velocityY;
@@ -28,8 +27,7 @@ if(velocityY > 0 && inAir == true){
 	isFalling = true;
 }
 
-
-//if player is on ground
+//room collision
 if(bbox_bottom >= room_height){
 	y = room_height - midHeight;
 	velocityY = 0;
@@ -40,7 +38,9 @@ if(bbox_bottom >= room_height){
 	canJump = true;	
 }
 
-
-if(velocityY >= 0 && inAir = true){
-	isFalling = true;
+//On death -------------------------------------------------------------------------------
+if(health <= 0){
+	game_end();
 }
+
+

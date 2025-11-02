@@ -85,4 +85,11 @@ else if(state == 1){
 		seesPlayer = false;
 	}
 	
+	if(distance_to_object(obj_player) < midWidth && canAttack == true){
+		canAttack = false;
+		instance_create_layer(x + (enemyDirection * midWidth), y, "Instances", obj_mouseAttackBox){
+			alarm[1] = attackCooldown * room_speed;
+		}
+	}
+	
 }

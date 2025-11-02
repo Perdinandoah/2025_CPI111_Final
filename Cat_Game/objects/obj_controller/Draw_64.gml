@@ -6,3 +6,5 @@ draw_text(10,10,("Postition: " + string(obj_player.x) + "," + string(obj_player.
 + " OG: " + string(obj_player.onGround)
 + " CA: " + string(obj_player.canAttack)
 + " PD: " + string(obj_player.playerDirection)));
+
+draw_healthbar(400, 10, 415, 100, health, c_black, c_red, c_green, 3, true, false)
