@@ -1,0 +1,1 @@
+audio_play_sound(snd_bkg_mus, 1, true);
