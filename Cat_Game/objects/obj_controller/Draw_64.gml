@@ -1,6 +1,7 @@
-draw_text(10,10,("Postition: " + string(obj_player.x) + "," + string(obj_player.y) +"\n" + "Veloctiy: " + string(obj_player.velocityX) + "," + string(obj_player.velocityY) +
-"\n" + "CJ: " + string(obj_player.canJump)
-+ " IsFlling: " + string(obj_player.isFalling)
+draw_text(10,10,("Postition: " + string(obj_player.x) + "," + string(obj_player.y) +"\n" + "Veloctiy: " + string(obj_player.velocityX) + "," + string(obj_player.velocityY)
++ "\nCnJmp: " + string(obj_player.canJump)
++ "CnMv: " + string(obj_player.canMove)
++ " \nIsFlling: " + string(obj_player.isFalling)
 + " IsJmpng: " + string(obj_player.isJumping)
 + " InAr: " + string(obj_player.inAir)
 + " OnGnd: " + string(obj_player.onGround)
@@ -8,6 +9,8 @@ draw_text(10,10,("Postition: " + string(obj_player.x) + "," + string(obj_player.
 + " IsAtkng: " + string(obj_player.isAttacking)
 + " \nCnBlk: " + string(obj_player.canBlock)
 + " IsBlkng: " + string(obj_player.isBlocking)
++ " \nCnEvd: " + string(obj_player.canEvade)
++ " IsEvdng: " + string(obj_player.isEvading)
 + " \nPlrDir: " + string(obj_player.playerDirection)));
 
 draw_healthbar(healthBarX, healthBarY, (healthBarX + healthBarWidth), (healthBarY + healthBarHeight),

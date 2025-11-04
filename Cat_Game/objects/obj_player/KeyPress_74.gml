@@ -1,4 +1,4 @@
-if(canAttack == true){
+if(canAttack && !isBlocking && !isEvading){
 	canAttack = false;
 	var hitBoxX = x + (playerDirection * midWidth);
 	var hitBoxY = y;

@@ -1,3 +1,4 @@
+if(canMove){
 playerDirection = -1;
 
 image_xscale = playerDirection;
@@ -9,4 +10,5 @@ if(!place_meeting(predictedX, y, obj_collidable)){
 }
 else{
 	x += 0
+}
 }
