@@ -42,6 +42,7 @@
     {"id":{"name":"obj_mouseAttackBox","path":"objects/obj_mouseAttackBox/obj_mouseAttackBox.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_playerAttack1Box","path":"objects/obj_playerAttack1Box/obj_playerAttack1Box.yy",},},
+    {"id":{"name":"obj_playerDashBox","path":"objects/obj_playerDashBox/obj_playerDashBox.yy",},},
     {"id":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
     {"id":{"name":"spr_atackBox","path":"sprites/spr_atackBox/spr_atackBox.yy",},},
     {"id":{"name":"spr_backgroundTest","path":"sprites/spr_backgroundTest/spr_backgroundTest.yy",},},
