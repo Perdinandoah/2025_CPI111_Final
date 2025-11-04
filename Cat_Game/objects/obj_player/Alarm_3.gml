@@ -1,0 +1,2 @@
+//Blocking cooldown
+canBlock = true;
