@@ -3,6 +3,7 @@ velocityY += obj_controller.gameGravity;
 //check if y collision will occur----------------------------------------------------------
 var predictedY = y + velocityY;
 if(!place_meeting(x, predictedY, obj_collidable)){
+	inAir = true;
 	y += velocityY;
 }
 else{ //ease the player against the wall
