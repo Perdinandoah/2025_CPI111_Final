@@ -1,3 +1,6 @@
+			/****** Move Right *****/
+
+
 if(canMove){
 playerDirection = 1;
 

@@ -1,3 +1,6 @@
+			/****** Step Event *****/
+
+
 if(isDashing){
 	velocityY = 0;
 }

@@ -1,3 +1,6 @@
+			/****** Evade Movement *****/
+
+
 //Move player back in segments
 if(evadeSteps > 1){
 	var stepBack = evadeDistance / 8;
