@@ -1,4 +1,6 @@
-//Charge Dash
+			/****** Charge Dash *****/
+			
+			
 if(canDash && !isAttacking && !isBlocking && !isEvading){
 	isCharging = true;
 	canDash = false;

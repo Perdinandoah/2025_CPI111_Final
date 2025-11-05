@@ -1,3 +1,6 @@
+			/****** Jump *****/
+
+
 if(canJump == true && inAir == false){
 	velocityY = jumpPower;
 	

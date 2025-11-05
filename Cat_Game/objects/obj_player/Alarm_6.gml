@@ -1,3 +1,6 @@
+			/****** Dash Movement *****/
+
+
 //Dash continues
 if(dashSteps > 0){
 	///move

@@ -1,3 +1,6 @@
+			/****** Damaged By Mouse *****/
+
+
 canBeDamaged = false;
 
 //Change damage recieved based on blocking
