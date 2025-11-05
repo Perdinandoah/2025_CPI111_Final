@@ -11,6 +11,10 @@ draw_text(10,10,("Postition: " + string(obj_player.x) + "," + string(obj_player.
 + " IsBlkng: " + string(obj_player.isBlocking)
 + " \nCnEvd: " + string(obj_player.canEvade)
 + " IsEvdng: " + string(obj_player.isEvading)
++ " \nCnDsh: " + string(obj_player.canDash)
++ " IsChrgng: " + string(obj_player.isCharging)
++ " IsDshng: " + string(obj_player.isDashing)
++ " ChrgAmnt: " + string(obj_player.dashCharge)
 + " \nPlrDir: " + string(obj_player.playerDirection)));
 
 draw_healthbar(healthBarX, healthBarY, (healthBarX + healthBarWidth), (healthBarY + healthBarHeight),

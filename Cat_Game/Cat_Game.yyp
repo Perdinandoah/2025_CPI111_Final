@@ -45,6 +45,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_playerAttack1Box","path":"objects/obj_playerAttack1Box/obj_playerAttack1Box.yy",},},
     {"id":{"name":"laserminigameRoom","path":"rooms/laserminigameRoom/laserminigameRoom.yy",},},
+    {"id":{"name":"obj_playerDashBox","path":"objects/obj_playerDashBox/obj_playerDashBox.yy",},},
     {"id":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
     {"id":{"name":"snd_bkg_mus","path":"sounds/snd_bkg_mus/snd_bkg_mus.yy",},},
     {"id":{"name":"spr_atackBox","path":"sprites/spr_atackBox/spr_atackBox.yy",},},

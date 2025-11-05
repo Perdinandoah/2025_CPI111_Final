@@ -1,4 +1,9 @@
-velocityY += obj_controller.gameGravity;
+if(isDashing){
+	velocityY = 0;
+}
+else{
+	velocityY += obj_controller.gameGravity;
+}
 
 //check if y collision will occur----------------------------------------------------------
 var predictedY = y + velocityY;
@@ -43,5 +48,16 @@ if(bbox_bottom >= room_height){
 if(health <= 0){
 	game_end();
 }
+
+
+//Dash Charging and Attacking---------------------------
+if(isCharging){
+	dashCharge = clamp(dashCharge + 0.05, 1, maxCharge);
+}
+
+if(isDashing){
+	instance_create_layer(x, y, "Instances", obj_playerDashBox)
+}
+
 
 
