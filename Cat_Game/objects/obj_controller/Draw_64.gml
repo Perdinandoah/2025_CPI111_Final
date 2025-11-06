@@ -3,6 +3,7 @@ draw_text(10,10,("Postition: " + string(obj_player.x) + "," + string(obj_player.
 + "Can Move: " + string(obj_player.canMove)
 + " \nIs Falling: " + string(obj_player.isFalling)
 + " Is Jumping: " + string(obj_player.isJumping)
++ " Jump Height: " + string(obj_player.jumpHeight)
 + " In Air: " + string(obj_player.inAir)
 + " On Ground: " + string(obj_player.onGround)
 + " \nCan Attack: " + string(obj_player.canAttack)
