@@ -1,3 +1,7 @@
+draw_healthbar(healthBarX, healthBarY, (healthBarX + healthBarWidth), (healthBarY + healthBarHeight),
+health, c_black, c_red, c_green, 3, true, false)
+
+draw_set_colour(c_white);
 draw_text(10,10,("Postition: " + string(obj_player.x) + "," + string(obj_player.y) +"\n" + "Veloctiy: " + string(obj_player.velocityX) + "," + string(obj_player.velocityY)
 + "\nCan Jump: " + string(obj_player.canJump)
 + "Can Move: " + string(obj_player.canMove)
@@ -17,6 +21,3 @@ draw_text(10,10,("Postition: " + string(obj_player.x) + "," + string(obj_player.
 + " Is Dashing: " + string(obj_player.isDashing)
 + " Charge Amount: " + string(obj_player.dashCharge)
 + " \nPlayer Direction: " + string(obj_player.playerDirection)));
-
-draw_healthbar(healthBarX, healthBarY, (healthBarX + healthBarWidth), (healthBarY + healthBarHeight),
-health, c_black, c_red, c_green, 3, true, false)
