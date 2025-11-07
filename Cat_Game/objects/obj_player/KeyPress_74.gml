@@ -12,3 +12,4 @@ if(canAttack && !isBlocking && !isEvading){
 	alarm[0] = attack1Cooldown * room_speed;
 	
 }
+audio_play_sound(snd_attack,1,false);
