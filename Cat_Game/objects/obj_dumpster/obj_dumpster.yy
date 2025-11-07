@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_collidable",
+  "%Name":"obj_dumpster",
   "eventList":[],
   "managed":true,
-  "name":"obj_collidable",
+  "name":"obj_dumpster",
   "overriddenProperties":[],
   "parent":{
     "name":"environment",
     "path":"folders/Objects/levelDesign/environment.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_collidable",
+    "path":"objects/obj_collidable/obj_collidable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_collider",
-    "path":"sprites/spr_collider/spr_collider.yy",
+    "name":"spr_dumpster",
+    "path":"sprites/spr_dumpster/spr_dumpster.yy",
   },
   "spriteMaskId":null,
   "visible":true,

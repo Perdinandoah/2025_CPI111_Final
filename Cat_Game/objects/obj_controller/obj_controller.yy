@@ -9,8 +9,8 @@
   "name":"obj_controller",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"controllers",
+    "path":"folders/Objects/levelDesign/controllers.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,6 +32,7 @@
     {"$GMObjectProperty":"v2","%Name":"healthBarY","filters":[],"listItems":[],"multiselect":false,"name":"healthBarY","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"healthBarWidth","filters":[],"listItems":[],"multiselect":false,"name":"healthBarWidth","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"15","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"healthBarHeight","filters":[],"listItems":[],"multiselect":false,"name":"healthBarHeight","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"100","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"gameStage","filters":[],"listItems":[],"multiselect":false,"name":"gameStage","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
