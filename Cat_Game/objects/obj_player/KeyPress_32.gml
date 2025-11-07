@@ -6,4 +6,3 @@ if(canJump == true && inAir == false){
 	isJumping = true;
 	inAir = true;
 }
-audio_play_sound(snd_jump,1,false);
