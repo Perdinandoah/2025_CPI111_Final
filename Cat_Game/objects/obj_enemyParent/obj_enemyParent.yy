@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemyMouse",
+  "%Name":"obj_enemyParent",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_playerAttack1Box","path":"objects/obj_playerAttack1Box/obj_playerAttack1Box.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -10,18 +10,13 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_playerDashBox","path":"objects/obj_playerDashBox/obj_playerDashBox.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_enemyMouse",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemyParent","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"propertyId":{"name":"hitPoints","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
-  ],
+  "name":"obj_enemyParent",
+  "overriddenProperties":[],
   "parent":{
     "name":"enemies",
     "path":"folders/Objects/enemies.yy",
   },
-  "parentObjectId":{
-    "name":"obj_enemyParent",
-    "path":"objects/obj_enemyParent/obj_enemyParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -63,10 +58,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_mousePlaceHolder",
-    "path":"sprites/spr_mousePlaceHolder/spr_mousePlaceHolder.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

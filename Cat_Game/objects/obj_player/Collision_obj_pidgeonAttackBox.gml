@@ -1,4 +1,4 @@
-			/****** Damaged By Mouse *****/
+			/****** Damaged By Pidgeon *****/
 
 if(canBeDamaged = true){
 canBeDamaged = false;
@@ -15,4 +15,5 @@ health -= (0.5 * obj_enemyMouse.attackPower);
 alarm[1] = iFrames;
 
 audio_play_sound(snd_crunch, 1, false);
+
 }
