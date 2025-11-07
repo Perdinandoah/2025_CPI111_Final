@@ -4,4 +4,5 @@ if (timer > 0) {
 } else {
     timer = 0;
     // You can add "end game" logic here (e.g., stop laser, show message)
+	room_goto(Tutorial)
 }

@@ -9,7 +9,7 @@
   "managed":true,
   "name":"obj_enemyPidgeon",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemyParent","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"propertyId":{"name":"playerDistanceThreshold","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"600",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemyParent","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"propertyId":{"name":"playerDistanceThreshold","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"450",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemyParent","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"propertyId":{"name":"velocityX","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemyParent","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"propertyId":{"name":"velocityY","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"6",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemyParent","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"propertyId":{"name":"hitPoints","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
