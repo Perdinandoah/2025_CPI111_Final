@@ -5,7 +5,7 @@
   "managed":true,
   "name":"obj_lasergameInteractable",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interactable","path":"objects/obj_interactable/obj_interactable.yy",},"propertyId":{"name":"roomToGoTo","path":"objects/obj_interactable/obj_interactable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"laserminigameRoom",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interactable","path":"objects/obj_interactable/obj_interactable.yy",},"propertyId":{"name":"roomToGoTo","path":"objects/obj_interactable/obj_interactable.yy",},"resource":{"name":"laserminigameRoom","path":"rooms/laserminigameRoom/laserminigameRoom.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"laserminigameRoom",},
   ],
   "parent":{
     "name":"interactable",
