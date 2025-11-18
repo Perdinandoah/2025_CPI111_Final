@@ -27,6 +27,15 @@
     {"$GMFolder":"","%Name":"fireescape","folderPath":"folders/Objects/levelDesign/environment/fireescape.yy","name":"fireescape","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"interactable","folderPath":"folders/Objects/levelDesign/interactable.yy","name":"interactable","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Simon Minigame","folderPath":"folders/Objects/Simon Minigame.yy","name":"Simon Minigame","resourceType":"GMFolder","resourceVersion":"2.0",},
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -47,6 +56,15 @@
     {"$GMFolder":"","%Name":"Minigame Sprites","folderPath":"folders/Sprites/Minigame Sprites.yy","name":"Minigame Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"laser","folderPath":"folders/Sprites/Minigame Sprites/laser.yy","name":"laser","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"simon","folderPath":"folders/Sprites/Minigame Sprites/simon.yy","name":"simon","resourceType":"GMFolder","resourceVersion":"2.0",},
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -61,6 +79,9 @@
   "name":"Cat_Game",
   "resources":[
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     {"id":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
     {"id":{"name":"obj_enemyMouse","path":"objects/obj_enemyMouse/obj_enemyMouse.yy",},},
@@ -71,6 +92,30 @@
     {"id":{"name":"obj_c","path":"objects/obj_c/obj_c.yy",},},
     {"id":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
+=======
+    {"id":{"name":"obj_a","path":"objects/obj_a/obj_a.yy",},},
+    {"id":{"name":"obj_b","path":"objects/obj_b/obj_b.yy",},},
+    {"id":{"name":"obj_box","path":"objects/obj_box/obj_box.yy",},},
+    {"id":{"name":"obj_c","path":"objects/obj_c/obj_c.yy",},},
+    {"id":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},},
+    {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
+>>>>>>> Stashed changes
+=======
+    {"id":{"name":"obj_a","path":"objects/obj_a/obj_a.yy",},},
+    {"id":{"name":"obj_b","path":"objects/obj_b/obj_b.yy",},},
+    {"id":{"name":"obj_box","path":"objects/obj_box/obj_box.yy",},},
+    {"id":{"name":"obj_c","path":"objects/obj_c/obj_c.yy",},},
+    {"id":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},},
+    {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
+>>>>>>> Stashed changes
+=======
+    {"id":{"name":"obj_a","path":"objects/obj_a/obj_a.yy",},},
+    {"id":{"name":"obj_b","path":"objects/obj_b/obj_b.yy",},},
+    {"id":{"name":"obj_box","path":"objects/obj_box/obj_box.yy",},},
+    {"id":{"name":"obj_c","path":"objects/obj_c/obj_c.yy",},},
+    {"id":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},},
+    {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"obj_d","path":"objects/obj_d/obj_d.yy",},},
     {"id":{"name":"obj_dumpster","path":"objects/obj_dumpster/obj_dumpster.yy",},},
     {"id":{"name":"obj_e","path":"objects/obj_e/obj_e.yy",},},
@@ -89,7 +134,16 @@
     {"id":{"name":"obj_playerAttack1Box","path":"objects/obj_playerAttack1Box/obj_playerAttack1Box.yy",},},
     {"id":{"name":"obj_playerDashBox","path":"objects/obj_playerDashBox/obj_playerDashBox.yy",},},
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     {"id":{"name":"obj_simoncontroller","path":"objects/obj_simoncontroller/obj_simoncontroller.yy",},},
     {"id":{"name":"obj_testroomInteractable","path":"objects/obj_testroomInteractable/obj_testroomInteractable.yy",},},
 >>>>>>> Stashed changes
@@ -115,10 +169,19 @@
     {"id":{"name":"spr_a","path":"sprites/spr_a/spr_a.yy",},},
     {"id":{"name":"spr_atackBox","path":"sprites/spr_atackBox/spr_atackBox.yy",},},
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     {"id":{"name":"spr_backgroundTest","path":"sprites/spr_backgroundTest/spr_backgroundTest.yy",},},
     {"id":{"name":"spr_black","path":"sprites/spr_black/spr_black.yy",},},
     {"id":{"name":"spr_collider","path":"sprites/spr_collider/spr_collider.yy",},},
 =======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     {"id":{"name":"spr_b","path":"sprites/spr_b/spr_b.yy",},},
     {"id":{"name":"spr_backgroundPlaceHolder","path":"sprites/spr_backgroundPlaceHolder/spr_backgroundPlaceHolder.yy",},},
     {"id":{"name":"spr_backgroundTest","path":"sprites/spr_backgroundTest/spr_backgroundTest.yy",},},
@@ -146,7 +209,19 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     {"roomId":{"name":"laserminigameRoom","path":"rooms/laserminigameRoom/laserminigameRoom.yy",},},
+=======
+    {"roomId":{"name":"simonminigameRoom","path":"rooms/simonminigameRoom/simonminigameRoom.yy",},},
+>>>>>>> Stashed changes
+=======
+    {"roomId":{"name":"simonminigameRoom","path":"rooms/simonminigameRoom/simonminigameRoom.yy",},},
+>>>>>>> Stashed changes
+=======
+    {"roomId":{"name":"simonminigameRoom","path":"rooms/simonminigameRoom/simonminigameRoom.yy",},},
+>>>>>>> Stashed changes
 =======
     {"roomId":{"name":"simonminigameRoom","path":"rooms/simonminigameRoom/simonminigameRoom.yy",},},
 >>>>>>> Stashed changes

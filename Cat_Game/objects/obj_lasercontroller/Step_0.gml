@@ -1,11 +1,20 @@
 // --- MINIGAME TIMER ---
 if (timer > 0) {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     timer -= 1;
 } else {
     timer = 0;
     // You can add "end game" logic here (e.g., stop laser, show message)
 =======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     timer -= 1; // count down
 }
 else if (timer == 0) {
@@ -35,5 +44,14 @@ if (timer == -1) {
         // Return to main room
         room_goto(Tutorial); // replace with your main room name
     }
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
