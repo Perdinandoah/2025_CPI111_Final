@@ -16,6 +16,18 @@
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"attackBoxes","folderPath":"folders/Objects/attackBoxes.yy","name":"attackBoxes","resourceType":"GMFolder","resourceVersion":"2.0",},
+<<<<<<< Updated upstream
+=======
+    {"$GMFolder":"","%Name":"enemies","folderPath":"folders/Objects/enemies.yy","name":"enemies","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Laser Minigame","folderPath":"folders/Objects/Laser Minigame.yy","name":"Laser Minigame","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"group1","folderPath":"folders/Objects/Laser Minigame/group1.yy","name":"group1","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"levelDesign","folderPath":"folders/Objects/levelDesign.yy","name":"levelDesign","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"controllers","folderPath":"folders/Objects/levelDesign/controllers.yy","name":"controllers","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"environment","folderPath":"folders/Objects/levelDesign/environment.yy","name":"environment","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"fireescape","folderPath":"folders/Objects/levelDesign/environment/fireescape.yy","name":"fireescape","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"interactable","folderPath":"folders/Objects/levelDesign/interactable.yy","name":"interactable","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Simon Minigame","folderPath":"folders/Objects/Simon Minigame.yy","name":"Simon Minigame","resourceType":"GMFolder","resourceVersion":"2.0",},
+>>>>>>> Stashed changes
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -24,6 +36,18 @@
     {"$GMFolder":"","%Name":"Shaders","folderPath":"folders/Shaders.yy","name":"Shaders","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+<<<<<<< Updated upstream
+=======
+    {"$GMFolder":"","%Name":"Level Sprites","folderPath":"folders/Sprites/Level Sprites.yy","name":"Level Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"background","folderPath":"folders/Sprites/Level Sprites/background.yy","name":"background","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"buildings","folderPath":"folders/Sprites/Level Sprites/buildings.yy","name":"buildings","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"brickBuilding","folderPath":"folders/Sprites/Level Sprites/buildings/brickBuilding.yy","name":"brickBuilding","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"levelDesign","folderPath":"folders/Sprites/Level Sprites/levelDesign.yy","name":"levelDesign","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"miscellanous","folderPath":"folders/Sprites/Level Sprites/miscellanous.yy","name":"miscellanous","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Minigame Sprites","folderPath":"folders/Sprites/Minigame Sprites.yy","name":"Minigame Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"laser","folderPath":"folders/Sprites/Minigame Sprites/laser.yy","name":"laser","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"simon","folderPath":"folders/Sprites/Minigame Sprites/simon.yy","name":"simon","resourceType":"GMFolder","resourceVersion":"2.0",},
+>>>>>>> Stashed changes
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
@@ -36,16 +60,41 @@
   },
   "name":"Cat_Game",
   "resources":[
+<<<<<<< Updated upstream
     {"id":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
     {"id":{"name":"obj_enemyMouse","path":"objects/obj_enemyMouse/obj_enemyMouse.yy",},},
+=======
+    {"id":{"name":"obj_a","path":"objects/obj_a/obj_a.yy",},},
+    {"id":{"name":"obj_b","path":"objects/obj_b/obj_b.yy",},},
+    {"id":{"name":"obj_box","path":"objects/obj_box/obj_box.yy",},},
+    {"id":{"name":"obj_c","path":"objects/obj_c/obj_c.yy",},},
+    {"id":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},},
+    {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
+    {"id":{"name":"obj_d","path":"objects/obj_d/obj_d.yy",},},
+    {"id":{"name":"obj_dumpster","path":"objects/obj_dumpster/obj_dumpster.yy",},},
+    {"id":{"name":"obj_e","path":"objects/obj_e/obj_e.yy",},},
+    {"id":{"name":"obj_enemyMouse","path":"objects/obj_enemyMouse/obj_enemyMouse.yy",},},
+    {"id":{"name":"obj_enemyParent","path":"objects/obj_enemyParent/obj_enemyParent.yy",},},
+    {"id":{"name":"obj_enemyPidgeon","path":"objects/obj_enemyPidgeon/obj_enemyPidgeon.yy",},},
+    {"id":{"name":"obj_f","path":"objects/obj_f/obj_f.yy",},},
+    {"id":{"name":"obj_g","path":"objects/obj_g/obj_g.yy",},},
+    {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},},
+    {"id":{"name":"obj_interactable","path":"objects/obj_interactable/obj_interactable.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"obj_lasercontroller","path":"objects/obj_lasercontroller/obj_lasercontroller.yy",},},
     {"id":{"name":"obj_laserpointer","path":"objects/obj_laserpointer/obj_laserpointer.yy",},},
     {"id":{"name":"obj_mouseAttackBox","path":"objects/obj_mouseAttackBox/obj_mouseAttackBox.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_playerAttack1Box","path":"objects/obj_playerAttack1Box/obj_playerAttack1Box.yy",},},
     {"id":{"name":"obj_playerDashBox","path":"objects/obj_playerDashBox/obj_playerDashBox.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"obj_simoncontroller","path":"objects/obj_simoncontroller/obj_simoncontroller.yy",},},
+    {"id":{"name":"obj_testroomInteractable","path":"objects/obj_testroomInteractable/obj_testroomInteractable.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"laserminigameRoom","path":"rooms/laserminigameRoom/laserminigameRoom.yy",},},
+    {"id":{"name":"simonminigameRoom","path":"rooms/simonminigameRoom/simonminigameRoom.yy",},},
     {"id":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
     {"id":{"name":"snd_a","path":"sounds/snd_a/snd_a.yy",},},
     {"id":{"name":"snd_attack","path":"sounds/snd_attack/snd_attack.yy",},},
@@ -63,10 +112,31 @@
     {"id":{"name":"snd_puzzle_bkn2","path":"sounds/snd_puzzle_bkn2/snd_puzzle_bkn2.yy",},},
     {"id":{"name":"snd_puzzle_lose","path":"sounds/snd_puzzle_lose/snd_puzzle_lose.yy",},},
     {"id":{"name":"snd_puzzle_win","path":"sounds/snd_puzzle_win/snd_puzzle_win.yy",},},
+    {"id":{"name":"spr_a","path":"sprites/spr_a/spr_a.yy",},},
     {"id":{"name":"spr_atackBox","path":"sprites/spr_atackBox/spr_atackBox.yy",},},
+<<<<<<< Updated upstream
     {"id":{"name":"spr_backgroundTest","path":"sprites/spr_backgroundTest/spr_backgroundTest.yy",},},
     {"id":{"name":"spr_black","path":"sprites/spr_black/spr_black.yy",},},
     {"id":{"name":"spr_collider","path":"sprites/spr_collider/spr_collider.yy",},},
+=======
+    {"id":{"name":"spr_b","path":"sprites/spr_b/spr_b.yy",},},
+    {"id":{"name":"spr_backgroundPlaceHolder","path":"sprites/spr_backgroundPlaceHolder/spr_backgroundPlaceHolder.yy",},},
+    {"id":{"name":"spr_backgroundTest","path":"sprites/spr_backgroundTest/spr_backgroundTest.yy",},},
+    {"id":{"name":"spr_black","path":"sprites/spr_black/spr_black.yy",},},
+    {"id":{"name":"spr_box","path":"sprites/spr_box/spr_box.yy",},},
+    {"id":{"name":"spr_brickBuilding","path":"sprites/spr_brickBuilding/spr_brickBuilding.yy",},},
+    {"id":{"name":"spr_bricks","path":"sprites/spr_bricks/spr_bricks.yy",},},
+    {"id":{"name":"spr_c","path":"sprites/spr_c/spr_c.yy",},},
+    {"id":{"name":"spr_collider","path":"sprites/spr_collider/spr_collider.yy",},},
+    {"id":{"name":"spr_d","path":"sprites/spr_d/spr_d.yy",},},
+    {"id":{"name":"spr_door","path":"sprites/spr_door/spr_door.yy",},},
+    {"id":{"name":"spr_dumpster","path":"sprites/spr_dumpster/spr_dumpster.yy",},},
+    {"id":{"name":"spr_e","path":"sprites/spr_e/spr_e.yy",},},
+    {"id":{"name":"spr_f","path":"sprites/spr_f/spr_f.yy",},},
+    {"id":{"name":"spr_g","path":"sprites/spr_g/spr_g.yy",},},
+    {"id":{"name":"spr_ground","path":"sprites/spr_ground/spr_ground.yy",},},
+    {"id":{"name":"spr_interactable","path":"sprites/spr_interactable/spr_interactable.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"spr_laserpointer","path":"sprites/spr_laserpointer/spr_laserpointer.yy",},},
     {"id":{"name":"spr_mousePlaceHolder","path":"sprites/spr_mousePlaceHolder/spr_mousePlaceHolder.yy",},},
     {"id":{"name":"spr_PlayerPlaceHolder","path":"sprites/spr_PlayerPlaceHolder/spr_PlayerPlaceHolder.yy",},},
@@ -75,7 +145,11 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
+<<<<<<< Updated upstream
     {"roomId":{"name":"laserminigameRoom","path":"rooms/laserminigameRoom/laserminigameRoom.yy",},},
+=======
+    {"roomId":{"name":"simonminigameRoom","path":"rooms/simonminigameRoom/simonminigameRoom.yy",},},
+>>>>>>> Stashed changes
   ],
   "templateType":"game",
   "TextureGroups":[
