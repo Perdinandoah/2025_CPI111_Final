@@ -44,15 +44,16 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.0.207",
+    "IDEVersion":"2024.14.1.210",
   },
   "name":"Cat_Game",
   "resources":[
+    {"id":{"name":"obj_batAttackBox","path":"objects/obj_batAttackBox/obj_batAttackBox.yy",},},
     {"id":{"name":"obj_box","path":"objects/obj_box/obj_box.yy",},},
     {"id":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
     {"id":{"name":"obj_dumpster","path":"objects/obj_dumpster/obj_dumpster.yy",},},
-    {"id":{"name":"obj_enemy_bat","path":"objects/obj_enemy_bat/obj_enemy_bat.yy",},},
+    {"id":{"name":"obj_enemyBat","path":"objects/obj_enemyBat/obj_enemyBat.yy",},},
     {"id":{"name":"obj_enemyMouse","path":"objects/obj_enemyMouse/obj_enemyMouse.yy",},},
     {"id":{"name":"obj_enemyParent","path":"objects/obj_enemyParent/obj_enemyParent.yy",},},
     {"id":{"name":"obj_enemyPidgeon","path":"objects/obj_enemyPidgeon/obj_enemyPidgeon.yy",},},
