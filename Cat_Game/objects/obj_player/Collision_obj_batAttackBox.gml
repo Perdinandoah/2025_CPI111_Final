@@ -5,10 +5,10 @@ canBeDamaged = false;
 
 //Change damage recieved based on blocking
 if(isBlocking == false){
-health -= obj_enemyMouse.attackPower;
+health -= obj_enemyBat.attackPower;
 }
 else{
-health -= (0.5 * obj_enemyPidgeon.attackPower);
+health -= (0.5 * obj_enemyBat.attackPower);
 }
 
 //Invincibilty frames
