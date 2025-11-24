@@ -53,19 +53,41 @@ if(bbox_right >= room_width || bbox_left <=0){
 
 //BEHAVIOUR--------------------------------------------------------------------
 //state 0
-if(state == 0){
+if(state == 0){//patrolling
+	//check if cat is outside territory
+	if(enemyDirection == 1 && x >= rightTerritoryBound){
+		enemyDirection = -1;
+	}
+	
+	if(enemyDirection == -1 && x <= leftTerritoryBound){
+		enemyDirection = 1;
+	}
+	
+	//move cat forward if no obstacle
 	var predictedX = x + enemyDirection * (velocityX + midWidth/5);
 	if(!place_meeting(predictedX, y, obj_collidable)){
 		x += (enemyDirection * velocityX);
 		image_xscale = enemyDirection;
+		isJumping = false;
 	}
-	else if(place_meeting(predictedX, y, obj_collidable)&& canJump == true){
-			strayCatJump()
-			canJump = false;
-			alarm[2] = jumpCooldown * room_speed;
-			
-		}
+	//if obstacle
 	else{
-		enemyDirection *= -1;
+		//if obstacle is jumpable
+		if(!place_meeting(predictedX, y - 100, obj_collidable)){
+			if(canJump){
+				canJump = false;
+				isJumping = true;
+				strayCatJump();
+				alarm[2] = jumpCooldown * room_speed;
+			}
+			else{
+				x += 0;//pause so cat can jump
+			}
 		}
+		//if obstacle can not be jumped
+		else{
+			enemyDirection *= -1;
+			isJumping = false;
+		}
+	}
 }
