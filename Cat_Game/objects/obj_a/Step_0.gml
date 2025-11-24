@@ -1,23 +1,21 @@
-if (obj_simoncontroller.player_turn && !obj_simoncontroller.game_over) {
-    audio_play_sound(note, 1, false);
+/// Button Step Event – fixed
 
-    if (id == obj_simoncontroller.sequence[obj_simoncontroller.player_index]) {
-        obj_simoncontroller.player_index += 1;
-
-        if (obj_simoncontroller.player_index >= array_length(obj_simoncontroller.sequence)) {
-            obj_simoncontroller.player_turn = false;
-            obj_simoncontroller.flash_all_buttons(3);
-            obj_simoncontroller.round += 1;
-
-            if (obj_simoncontroller.round > obj_simoncontroller.max_rounds) {
-                obj_simoncontroller.game_over = true;
-                show_game_complete();
-            } else {
-                start_round();
-            }
-        }
-    } else {
-        obj_simoncontroller.flash_all_buttons_red();
-        restart_round();
-    }
+if (flash > 0) {
+    flash--;              // player click
+    image_blend = c_white;
+}
+else if (flash_end > 0) {
+    flash_end--;          // end-of-round
+    image_blend = c_white;
+}
+else if (flash_green > 0) {
+    flash_green--;        // computer playback
+    image_blend = c_lime;
+}
+else if (flash_red > 0) {
+    flash_red--;          // wrong press
+    image_blend = c_red;
+}
+else {
+    image_blend = c_white; // normal
 }

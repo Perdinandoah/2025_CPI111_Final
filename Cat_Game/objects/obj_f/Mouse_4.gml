@@ -1,30 +1,48 @@
-if (obj_simoncontroller.player_turn && !obj_simoncontroller.game_over) {
-    // Play sound
-    audio_play_sound(note,1,false);
-    
-    // Check if correct
-    if (id == obj_simoncontroller.sequence[obj_simoncontroller.player_index]) {
-        obj_simoncontroller.player_index += 1;
-        
-        // Completed sequence
-        if (obj_simoncontroller.player_index >= array_length(obj_simoncontroller.sequence)) {
-            player_turn = false;
+/// obj_a – Left Pressed
+
+var controller = obj_simoncontroller; // adjust if your controller instance has a different name
+if (!instance_exists(controller)) exit; // safety check
+
+// Only allow input during player turn and if game is not over
+if (controller.player_turn && !controller.game_over) {
+
+    // Play button sound
+    audio_play_sound(snd_f, 1, false);
+
+    var idx = controller.player_index;
+    var seq = controller.sequence;
+
+    // Safety: index in bounds
+    if (idx >= array_length(seq)) exit;
+
+    var expected_inst = seq[idx];
+
+    if (expected_inst == id) {
+        // ✅ Correct click
+        flash = controller.flash_time;      // White flash for player feedback
+        controller.player_index++;
+
+        // End of sequence?
+        if (controller.player_index >= array_length(seq)) {
+            controller.player_turn = false;
+
+            // Trigger 3 white flashes for end-of-round
+            controller.fn_flash_all_buttons(3);
             
-            // Flash success
-            obj_simoncontroller.flash_all_buttons(3);
-            
-            // Next round or win
-            obj_simoncontroller.round += 1;
-            if (obj_simoncontroller.round > obj_simoncontroller.max_rounds) {
-                obj_simoncontroller.game_over = true;
-                show_game_complete();
+            // Prepare next round or end game
+            controller.current_round++;
+            if (controller.current_round > controller.max_rounds) {
+                controller.fn_show_game_complete();
             } else {
-                start_round();
+                // The controller Step will handle the pause and then start next round
+                controller.pause_timer = controller.post_flash_pause;
             }
         }
+
     } else {
-        // Failed sequence
-        obj_simoncontroller.flash_all_buttons_red();
-        restart_round();
+        // ❌ Wrong click
+        controller.fn_flash_all_buttons_red(); // flash all buttons red
+        controller.fn_restart_round();         // replay same round
     }
 }
+
