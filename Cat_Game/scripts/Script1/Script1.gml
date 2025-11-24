@@ -1,3 +1,0 @@
-function strayCatJump(){
-velocityY = jumpPower;
-}

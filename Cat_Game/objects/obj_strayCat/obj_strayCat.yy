@@ -40,6 +40,7 @@
     {"$GMObjectProperty":"v2","%Name":"leftTerritoryBound","filters":[],"listItems":[],"multiselect":false,"name":"leftTerritoryBound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"rightTerritoryBound","filters":[],"listItems":[],"multiselect":false,"name":"rightTerritoryBound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"territoryRadius","filters":[],"listItems":[],"multiselect":false,"name":"territoryRadius","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"400","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"attackRange","filters":[],"listItems":[],"multiselect":false,"name":"attackRange","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"50","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
