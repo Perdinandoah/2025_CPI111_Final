@@ -86,6 +86,7 @@
     {"id":{"name":"simonminigame_room","path":"rooms/simonminigame_room/simonminigame_room.yy",},},
     {"id":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
     {"id":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
+    {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"flash_all_buttons_red","path":"scripts/flash_all_buttons_red/flash_all_buttons_red.yy",},},
     {"id":{"name":"flash_all_buttons","path":"scripts/flash_all_buttons/flash_all_buttons.yy",},},
     {"id":{"name":"generate_sequence","path":"scripts/generate_sequence/generate_sequence.yy",},},
