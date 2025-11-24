@@ -90,6 +90,7 @@
     {"id":{"name":"snd_puzzle_bkn2","path":"sounds/snd_puzzle_bkn2/snd_puzzle_bkn2.yy",},},
     {"id":{"name":"snd_puzzle_lose","path":"sounds/snd_puzzle_lose/snd_puzzle_lose.yy",},},
     {"id":{"name":"snd_puzzle_win","path":"sounds/snd_puzzle_win/snd_puzzle_win.yy",},},
+    {"id":{"name":"spr_a","path":"sprites/spr_a/spr_a.yy",},},
     {"id":{"name":"spr_atackBox","path":"sprites/spr_atackBox/spr_atackBox.yy",},},
     {"id":{"name":"spr_backgroundPlaceHolder","path":"sprites/spr_backgroundPlaceHolder/spr_backgroundPlaceHolder.yy",},},
     {"id":{"name":"spr_backgroundTest","path":"sprites/spr_backgroundTest/spr_backgroundTest.yy",},},
