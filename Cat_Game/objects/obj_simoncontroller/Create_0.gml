@@ -1,4 +1,7 @@
 /// obj_simoncontroller – Create
+if (audio_is_playing(snd_bkg_mus)) {
+    audio_pause_sound(snd_bkg_mus);
+}
 minigame_complete = false;
 exit_timer = 0;
 exit_delay = room_speed * 5; // 5 seconds
@@ -96,6 +99,11 @@ if (!variable_global_exists("score")) global.score = 0;
 
 // Increase by 100
 global.score += 100;
+ // Stop all sounds (including minigame music)
+        audio_stop_all();
+
+        // Start main game music again
+        audio_play_sound(snd_bkg_mus, 1, true);
 
 
     // Start exit timer
