@@ -1,5 +1,8 @@
 velocityY += obj_controller.gameGravity;
 
+//update direction
+image_xscale = enemyDirection;
+
 
 //check if y collision will occur
 var predictedY = y + velocityY;
@@ -62,32 +65,35 @@ if(state == 0){//patrolling
 	if(enemyDirection == -1 && x <= leftTerritoryBound){
 		enemyDirection = 1;
 	}
+	strayCatMove()
 	
-	//move cat forward if no obstacle
-	var predictedX = x + enemyDirection * (velocityX + midWidth/5);
-	if(!place_meeting(predictedX, y, obj_collidable)){
-		x += (enemyDirection * velocityX);
-		image_xscale = enemyDirection;
-		isJumping = false;
-	}
-	//if obstacle
-	else{
-		//if obstacle is jumpable
-		if(!place_meeting(predictedX, y - 100, obj_collidable)){
-			if(canJump){
-				canJump = false;
-				isJumping = true;
-				strayCatJump();
-				alarm[2] = jumpCooldown * room_speed;
-			}
-			else{
-				x += 0;//pause so cat can jump
-			}
-		}
-		//if obstacle can not be jumped
-		else{
-			enemyDirection *= -1;
-			isJumping = false;
-		}
+	//check if player is near and in territory
+	if((abs(obj_player.x - self.x) < playerDistanceThreshold) &&
+	(obj_player.x > leftTerritoryBound && obj_player.x < rightTerritoryBound)){
+		state = 1;
+		seesPlayer = true
 	}
 }
+
+if(state == 1){//approach player
+	//change direction towards player
+	enemyFacePlayer()
+	
+	//move towards player untill in range
+	if(abs(obj_player.x - self.x) > attackRange){
+		strayCatMove()
+	}
+	else{
+		state = 2;
+	}
+	//reset to state0 if player leaves territory ONLY
+	if(!(obj_player.x > leftTerritoryBound && obj_player.x < rightTerritoryBound)){
+		state = 0;
+	}
+}
+
+if(state == 2){
+	
+}
+	
+	

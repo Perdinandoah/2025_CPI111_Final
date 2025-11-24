@@ -1,5 +1,8 @@
 velocityY += obj_controller.gameGravity;
 
+//update direction
+image_xscale = enemyDirection;
+
 
 //check if y collision will occur
 var predictedY = y + velocityY;
@@ -58,7 +61,6 @@ if(state == 0){
 	var predictedX = x + enemyDirection * (velocityX + midWidth/5);
 	if(!place_meeting(predictedX, y, obj_collidable)){
 		x += (enemyDirection * velocityX);
-		image_xscale = enemyDirection;
 	}
 	else{
 		enemyDirection *= -1;
@@ -72,14 +74,8 @@ if(state == 0){
 }
 //Hold ground and defend self
 else if(state == 1){
-	if(obj_player.x < x){
-		enemyDirection = -1;
-		image_xscale = enemyDirection;
-	}
-	else{
-		enemyDirection = 1;
-		image_xscale = enemyDirection;
-	}
+	enemyFacePlayer()
+	
 	if(distance_to_object(obj_player) > playerDistanceThreshold){
 		state = 0;
 		seesPlayer = false;
