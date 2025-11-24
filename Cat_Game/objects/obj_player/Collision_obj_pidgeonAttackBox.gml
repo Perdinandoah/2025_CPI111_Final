@@ -1,14 +1,14 @@
 			/****** Damaged By Pidgeon *****/
 
-if(canBeDamaged = true){
+if(canBeDamaged == true){
 canBeDamaged = false;
 
 //Change damage recieved based on blocking
 if(isBlocking == false){
-health -= obj_enemyMouse.attackPower;
+health -= obj_enemyParent.attackPower
 }
 else{
-health -= (0.5 * obj_enemyPidgeon.attackPower);
+health -= (0.5 * obj_enemyParent.attackPower);
 }
 
 //Invincibilty frames

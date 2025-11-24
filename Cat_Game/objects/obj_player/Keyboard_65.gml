@@ -14,4 +14,5 @@ if(!place_meeting(predictedX, y, obj_collidable)){
 else{
 	x += 0
 }
+
 }
