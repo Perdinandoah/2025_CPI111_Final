@@ -91,7 +91,7 @@
     {"id":{"name":"flash_all_buttons","path":"scripts/flash_all_buttons/flash_all_buttons.yy",},},
     {"id":{"name":"generate_sequence","path":"scripts/generate_sequence/generate_sequence.yy",},},
     {"id":{"name":"restart_round","path":"scripts/restart_round/restart_round.yy",},},
-    {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
+    {"id":{"name":"scr_strayCat","path":"scripts/scr_strayCat/scr_strayCat.yy",},},
     {"id":{"name":"show_game_complete","path":"scripts/show_game_complete/show_game_complete.yy",},},
     {"id":{"name":"start_round","path":"scripts/start_round/start_round.yy",},},
     {"id":{"name":"snd_a","path":"sounds/snd_a/snd_a.yy",},},
