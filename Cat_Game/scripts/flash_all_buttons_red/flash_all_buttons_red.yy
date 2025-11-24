@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"flash_all_buttons_red",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"flash_all_buttons_red",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
