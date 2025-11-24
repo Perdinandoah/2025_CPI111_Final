@@ -1,13 +1,10 @@
-// Laser movement setup
-speed = 2;
-direction = irandom(359);
-change_timer = irandom_range(15, 40);
-trail_surface = -1;
-trail_alpha = 0.8;
+// Movement setup
+speed         = 1.8;                 // adjust if you want faster/slower
+direction     = irandom(359);
+change_timer  = irandom_range(25, 50); // how often it scribbles
 
-// Find controller safely
-if (instance_exists(obj_lasercontroller)) {
-    controller = instance_find(obj_lasercontroller, 0);
-} else {
-    controller = noone;
-}
+// Trail setup
+trail_surface = -1;
+
+// Controller reference (found later in Step)
+controller    = noone;
