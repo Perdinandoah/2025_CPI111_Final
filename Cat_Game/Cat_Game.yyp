@@ -139,10 +139,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"simonminigame_room","path":"rooms/simonminigame_room/simonminigame_room.yy",},},
     {"roomId":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
     {"roomId":{"name":"laserminigameRoom","path":"rooms/laserminigameRoom/laserminigameRoom.yy",},},
     {"roomId":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
+    {"roomId":{"name":"simonminigame_room","path":"rooms/simonminigame_room/simonminigame_room.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
