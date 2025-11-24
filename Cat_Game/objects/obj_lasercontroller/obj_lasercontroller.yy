@@ -10,8 +10,8 @@
   "name":"obj_lasercontroller",
   "overriddenProperties":[],
   "parent":{
-    "name":"Laser Minigame",
-    "path":"folders/Objects/Laser Minigame.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
