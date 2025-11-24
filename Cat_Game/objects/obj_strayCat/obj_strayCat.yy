@@ -13,6 +13,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemyParent","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"propertyId":{"name":"isJumping","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemyParent","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"propertyId":{"name":"canJump","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemyParent","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"propertyId":{"name":"jumpPower","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"-25",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemyParent","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"propertyId":{"name":"playerDistanceThreshold","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"250",},
   ],
   "parent":{
     "name":"enemies",
@@ -40,6 +41,7 @@
     {"$GMObjectProperty":"v2","%Name":"leftTerritoryBound","filters":[],"listItems":[],"multiselect":false,"name":"leftTerritoryBound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"rightTerritoryBound","filters":[],"listItems":[],"multiselect":false,"name":"rightTerritoryBound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"territoryRadius","filters":[],"listItems":[],"multiselect":false,"name":"territoryRadius","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"400","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"attackRange","filters":[],"listItems":[],"multiselect":false,"name":"attackRange","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"100","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
