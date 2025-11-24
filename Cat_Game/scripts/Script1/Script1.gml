@@ -1,0 +1,3 @@
+function strayCatJump(){
+velocityY = jumpPower;
+}
