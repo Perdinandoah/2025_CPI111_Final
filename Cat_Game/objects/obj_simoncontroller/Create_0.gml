@@ -1,4 +1,7 @@
 /// obj_simoncontroller – Create
+minigame_complete = false;
+exit_timer = 0;
+exit_delay = room_speed * 5; // 5 seconds
 
 // Round setup
 current_round = 1;
@@ -77,8 +80,8 @@ fn_flash_all_buttons_red = function() {
     }
 };
 
-// End of game
 fn_show_game_complete = function() {
+    // Destroy buttons
     for (var i = 0; i < array_length(buttons); i++) {
         var inst = buttons[i];
         if (instance_exists(inst)) instance_destroy(inst);
@@ -88,7 +91,18 @@ fn_show_game_complete = function() {
     player_turn      = false;
     playing_sequence = false;
 
-    // Use first available layer
+  // Make sure global.score exists (safety)
+if (!variable_global_exists("score")) global.score = 0;
+
+// Increase by 100
+global.score += 100;
+
+
+    // Start exit timer
+    minigame_complete = true;
+    exit_timer = 0;
+
+    // Show "Minigame Complete!" text
     var lay = layer;
     if (layer_exists("GUI")) lay = "GUI";
     instance_create_layer(room_width/2, room_height/2, lay, obj_game_complete_text);

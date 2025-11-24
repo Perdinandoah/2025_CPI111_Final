@@ -65,3 +65,13 @@ if (pause_timer > 0) {
         fn_start_round();
     }
 }
+
+// ---------- Exit minigame after delay ----------
+if (minigame_complete) {
+	    // Increase global score
+    exit_timer++;
+    if (exit_timer >= exit_delay) {
+        // Go back to previous room or main game room
+        room_goto(Tutorial); 
+    }
+}
