@@ -6,8 +6,8 @@
   "name":"obj_collidable",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"environment",
+    "path":"folders/Objects/levelDesign/environment.yy",
   },
   "parentObjectId":null,
   "persistent":false,

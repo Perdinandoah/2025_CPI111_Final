@@ -1,3 +1,6 @@
+			/****** Attack *****/
+
+
 if(canAttack && !isBlocking && !isEvading){
 	canAttack = false;
 	var hitBoxX = x + (playerDirection * midWidth);
@@ -5,6 +8,7 @@ if(canAttack && !isBlocking && !isEvading){
 	
 	instance_create_layer(hitBoxX, hitBoxY, "instances", obj_playerAttack1Box);
 	
+	//attack cooldown
 	alarm[0] = attack1Cooldown * room_speed;
 	
 }

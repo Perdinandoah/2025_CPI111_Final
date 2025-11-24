@@ -1,2 +1,2 @@
-//Reset after being attacked
+			/****** Reset Damaged State *****/
 canBeDamaged = true;

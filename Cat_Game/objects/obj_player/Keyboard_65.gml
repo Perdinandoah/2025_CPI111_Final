@@ -1,3 +1,6 @@
+			/****** Move Left *****/
+
+
 if(canMove){
 playerDirection = -1;
 

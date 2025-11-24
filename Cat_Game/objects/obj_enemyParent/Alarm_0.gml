@@ -1,0 +1,1 @@
+canBeDamaged = true;

@@ -1,5 +1,5 @@
-//Start blocking
-if(canBlock == true){
+			/****** Block *****/
+if(canBlock && !isAttacking && !isCharging && !isEvading){
 	canBlock = false;
 	isBlocking = true;
 }

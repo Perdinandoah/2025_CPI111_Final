@@ -1,2 +1,2 @@
-//Blocking cooldown
+			/****** Reset Block State *****/
 canBlock = true;

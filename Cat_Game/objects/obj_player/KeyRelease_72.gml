@@ -1,3 +1,6 @@
+			/****** Dash *****/
+
+
 if(isCharging){
 	
 	isCharging = false;
@@ -13,7 +16,7 @@ if(isCharging){
 	totalDashDistance = dashDistance * dashCharge;
 	dashStepDistance = totalDashDistance / dashSteps;
 	
-	//start dash
+	//start dash movement
 	alarm[6] = 1
 	}
 }
