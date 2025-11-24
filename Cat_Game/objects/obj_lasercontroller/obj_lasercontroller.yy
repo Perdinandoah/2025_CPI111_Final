@@ -10,8 +10,8 @@
   "name":"obj_lasercontroller",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"laser mimgame",
+    "path":"folders/Objects/laser mimgame.yy",
   },
   "parentObjectId":null,
   "persistent":false,
