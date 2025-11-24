@@ -92,8 +92,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_PlayerPlaceHolder",
-    "path":"sprites/spr_PlayerPlaceHolder/spr_PlayerPlaceHolder.yy",
+    "name":"spr_playerRunning",
+    "path":"sprites/spr_playerRunning/spr_playerRunning.yy",
   },
   "spriteMaskId":null,
   "visible":true,

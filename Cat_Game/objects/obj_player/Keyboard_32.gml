@@ -15,3 +15,16 @@ if (canJump && !inAir) {
 if(isFalling){
 	isJumping = false;
 }
+
+//animations
+if (isJumping = true){
+	sprite_index = spr_playerJump;
+}
+else {
+	sprite_index = spr_playerRunning;
+}
+
+
+if (onGround = true){
+	sprite_index = spr_playerRunning;
+}

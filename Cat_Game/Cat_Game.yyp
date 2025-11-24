@@ -44,7 +44,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.0.207",
+    "IDEVersion":"2024.14.1.210",
   },
   "name":"Cat_Game",
   "resources":[
@@ -100,7 +100,10 @@
     {"id":{"name":"spr_laserpointer","path":"sprites/spr_laserpointer/spr_laserpointer.yy",},},
     {"id":{"name":"spr_mousePlaceHolder","path":"sprites/spr_mousePlaceHolder/spr_mousePlaceHolder.yy",},},
     {"id":{"name":"spr_pidgeonPlaceHolder","path":"sprites/spr_pidgeonPlaceHolder/spr_pidgeonPlaceHolder.yy",},},
-    {"id":{"name":"spr_PlayerPlaceHolder","path":"sprites/spr_PlayerPlaceHolder/spr_PlayerPlaceHolder.yy",},},
+    {"id":{"name":"spr_playerJump","path":"sprites/spr_playerJump/spr_playerJump.yy",},},
+    {"id":{"name":"spr_playerPounce","path":"sprites/spr_playerPounce/spr_playerPounce.yy",},},
+    {"id":{"name":"spr_playerRunning","path":"sprites/spr_playerRunning/spr_playerRunning.yy",},},
+    {"id":{"name":"spr_playerSwipe","path":"sprites/spr_playerSwipe/spr_playerSwipe.yy",},},
     {"id":{"name":"spr_window","path":"sprites/spr_window/spr_window.yy",},},
   ],
   "resourceType":"GMProject",
