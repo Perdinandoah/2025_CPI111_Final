@@ -1,19 +1,7 @@
 			/****** Step Event *****/
-
-
-//Jump height increase--------------------------------------
-if (isJumping && jumpHeight < maxJumpHeight) {
-    if (!place_meeting(x, (y + velocityY), obj_collidable)) {
-        // Keep adding small upward force while key is held
-        velocityY += jumpPower; 
-        jumpHeight += 1;
-		}
-	else {
-        // Stop adding upward force when key released or height cap reached
-        isJumping = false;
-		velocityY = 0;
-    }
-}
+//Jump inputs
+keyJump = keyboard_check_pressed(vk_space);
+keyJumpHeld = keyboard_check(vk_space);
 
 
 //Gravity-------------------------------------------
@@ -80,3 +68,32 @@ if(isCharging){
 if(isDashing){
 	instance_create_layer(x, y, "Instances", obj_playerDashBox)
 }
+
+//Jump-------------------------------------------------------
+//start jump
+if(keyJump && canJump && !inAir){
+	//state flags
+	isJumping = true;
+    canJump = false;
+    inAir = true;
+    onGround = false;
+
+    //Jump
+    velocityY = jumpPower;
+
+    // Play jump sound
+    audio_play_sound(snd_jump, 1, false);
+}
+
+// Keeps state flags from inflicting
+if (isFalling) {
+    isJumping = false;
+}
+
+//when jumnp key lets go, stop jump with some float
+if(velocityY < 0 && !keyJumpHeld){
+	isJumping = false;
+	velocityY = max(velocityY, jumpPower/4);
+}
+	
+	
