@@ -3,7 +3,7 @@
 
 //Jump height increase--------------------------------------
 if (isJumping && jumpHeight < maxJumpHeight) {
-    if (!place_meeting(x, (y + velocityY), obj_collidable)) {
+    if (!place_meeting(x, y + velocityY, obj_collidable)) {
         // Keep adding small upward force while key is held
         velocityY += jumpPower; 
         jumpHeight += 1;
@@ -24,10 +24,10 @@ else{
 	velocityY += obj_controller.gameGravity;
 }
 
-
 //check if y collision will occur----------------------------------------------------------
 var predictedY = y + velocityY;
 if(!place_meeting(x, predictedY, obj_collidable)){
+	coyoteTimer =max(0, coyoteTimer -1);
 	inAir = true;
 	y += velocityY;
 }
@@ -46,6 +46,7 @@ else{ //ease the player against the wall
 	isJumping = false;
 	isFalling = false;
 	canJump = true;
+	coyoteTimer = coyoteTimerDefault;
 }
 
 
