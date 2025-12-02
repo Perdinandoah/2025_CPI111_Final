@@ -93,7 +93,7 @@ if (isFalling) {
 }
 
 //change jumpPower during jump
-if(keyJumpHeld && isJumping && !(jumpPower <= maxJumpPower)){
+if(keyJumpHeld && (isJumping || coyoteTimer > 0) && !(jumpPower <= maxJumpPower)){
 	jumpPower = clamp(jumpPower - 1, maxJumpPower, defaultJumpPower);
 	velocityY = jumpPower;
 }
