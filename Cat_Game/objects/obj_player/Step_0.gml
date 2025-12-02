@@ -35,6 +35,7 @@ else{ //ease the player against the wall
 	isFalling = false;
 	canJump = true;
 	coyoteTimer = coyoteTimerDefault; //reset coyote timer when on ground
+	jumpPower = defaultJumpPower //reset jump power when on ground
 }
 
 
@@ -79,7 +80,7 @@ if(keyJump && canJump && coyoteTimer > 0){
     inAir = true;
     onGround = false;
 
-    //Jump
+    //start jump
     velocityY = jumpPower;
 
     // Play jump sound
@@ -91,10 +92,16 @@ if (isFalling) {
     isJumping = false;
 }
 
+//change jumpPower during jump
+if(keyJumpHeld && isJumping && !(jumpPower <= maxJumpPower)){
+	jumpPower = clamp(jumpPower - 1, maxJumpPower, defaultJumpPower);
+	velocityY = jumpPower;
+}
+
 //when jumnp key lets go, stop jump with some float
 if(velocityY < 0 && !keyJumpHeld){
 	isJumping = false;
-	velocityY = max(velocityY, jumpPower/4);
+	velocityY = max(velocityY, jumpPower/1.5);
 }
 	
 	
