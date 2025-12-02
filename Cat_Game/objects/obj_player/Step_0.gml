@@ -4,21 +4,6 @@ keyJump = keyboard_check_pressed(vk_space);
 keyJumpHeld = keyboard_check(vk_space);
 
 
-//Jump height increase--------------------------------------
-if (isJumping && jumpHeight < maxJumpHeight) {
-    if (!place_meeting(x, y + velocityY, obj_collidable)) {
-        // Keep adding small upward force while key is held
-        velocityY += jumpPower; 
-        jumpHeight += 1;
-		}
-	else {
-        // Stop adding upward force when key released or height cap reached
-        isJumping = false;
-		velocityY = 0;
-    }
-}
-
-
 //Gravity-------------------------------------------
 if(isDashing){
 	velocityY = 0;
@@ -30,7 +15,7 @@ else{
 //check if y collision will occur----------------------------------------------------------
 var predictedY = y + velocityY;
 if(!place_meeting(x, predictedY, obj_collidable)){
-	coyoteTimer =max(0, coyoteTimer -1);
+	coyoteTimer =max(0, coyoteTimer -1); //start coyote timer when falling
 	inAir = true;
 	y += velocityY;
 }
@@ -49,7 +34,7 @@ else{ //ease the player against the wall
 	isJumping = false;
 	isFalling = false;
 	canJump = true;
-	coyoteTimer = coyoteTimerDefault;
+	coyoteTimer = coyoteTimerDefault; //reset coyote timer when on ground
 }
 
 
@@ -87,7 +72,7 @@ if(isDashing){
 
 //Jump-------------------------------------------------------
 //start jump
-if(keyJump && canJump && !inAir){
+if(keyJump && canJump && coyoteTimer > 0){
 	//state flags
 	isJumping = true;
     canJump = false;
