@@ -1,4 +1,7 @@
 			/****** Step Event *****/
+//Jump inputs
+keyJump = keyboard_check_pressed(vk_space);
+keyJumpHeld = keyboard_check(vk_space);
 
 
 //Jump height increase--------------------------------------
@@ -81,3 +84,32 @@ if(isCharging){
 if(isDashing){
 	instance_create_layer(x, y, "Instances", obj_playerDashBox)
 }
+
+//Jump-------------------------------------------------------
+//start jump
+if(keyJump && canJump && !inAir){
+	//state flags
+	isJumping = true;
+    canJump = false;
+    inAir = true;
+    onGround = false;
+
+    //Jump
+    velocityY = jumpPower;
+
+    // Play jump sound
+    audio_play_sound(snd_jump, 1, false);
+}
+
+// Keeps state flags from inflicting
+if (isFalling) {
+    isJumping = false;
+}
+
+//when jumnp key lets go, stop jump with some float
+if(velocityY < 0 && !keyJumpHeld){
+	isJumping = false;
+	velocityY = max(velocityY, jumpPower/4);
+}
+	
+	
