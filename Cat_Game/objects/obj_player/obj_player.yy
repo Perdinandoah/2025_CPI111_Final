@@ -87,6 +87,8 @@
     {"$GMObjectProperty":"v2","%Name":"dashCharge","filters":[],"listItems":[],"multiselect":false,"name":"dashCharge","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"maxCharge","filters":[],"listItems":[],"multiselect":false,"name":"maxCharge","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"dashCooldown","filters":[],"listItems":[],"multiselect":false,"name":"dashCooldown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"coyoteTimer","filters":[],"listItems":[],"multiselect":false,"name":"coyoteTimer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"coyoteTimerDefault","filters":[],"listItems":[],"multiselect":false,"name":"coyoteTimerDefault","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

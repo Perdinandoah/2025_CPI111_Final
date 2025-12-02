@@ -1,6 +1,6 @@
 /****** Jump *****/
 
-if (canJump && !inAir) {
+if (canJump && coyoteTimer > 0) {
     isJumping = true;
     canJump = false;
     inAir = true;
