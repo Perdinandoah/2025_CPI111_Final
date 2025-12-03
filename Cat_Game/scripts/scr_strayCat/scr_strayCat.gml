@@ -29,3 +29,14 @@ function strayCatMove(){
 		}
 	}
 }
+
+function strayCatActions(givenBoolean){
+	canAttack = givenBoolean;
+	canDash = givenBoolean;
+	canBlock = givenBoolean;
+	canEvade = givenBoolean;
+}
+
+function strayCatCooldown(cooldown){
+	alarm[3] = cooldown;
+}

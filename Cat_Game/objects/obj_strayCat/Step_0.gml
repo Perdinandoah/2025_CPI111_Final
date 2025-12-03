@@ -88,7 +88,7 @@ if(state == 1){//approach player
     }
 }
 
-if(state = 2){//combat
+if(state == 2){//combat
 	//Update direction
 	enemyChangeDirection()
 	//Roll Dice
@@ -98,10 +98,16 @@ if(state = 2){//combat
 	if(obj_player.isAttacking){
 		if(diceRoll < 0.2 && canEvade){
 			//evade
+			strayCatActions(false);
+			//INSERT EVADE CODE HERE
+			strayCatCooldown(longCoolDown);
 		}
 		
-		if(diceRoll < 0.5 && canDodge){
+		else if(diceRoll < 0.5 && canBlock){
 			//block
+			strayCatActions(false);
+			//INSERT BLOCK CODE HERE
+			strayCatCooldown(shortCoolDown);
 		}
 		
 		else{
@@ -114,10 +120,17 @@ if(state = 2){//combat
 	else{
 		if(diceRoll < 0.66 && canAttack){
 			//attack
+			strayCatActions(false);
+			//INSERT ATTACK CODE HERE
+			strayCatCooldown(shortCoolDown);
 		}
 		
 		else if(diceRoll < 1 && canDash){
 			//dash
+			strayCatActions(false);
+			//INSERT DASH CODE HERE
+			strayCatCooldown(longCoolDown);
+			
 		}
 	}
 	
