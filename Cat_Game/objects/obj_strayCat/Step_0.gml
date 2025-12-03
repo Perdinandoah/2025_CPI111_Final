@@ -74,13 +74,7 @@ if(state == 0){//patrolling
 
 if(state == 1){//approach player
     //change direction towards player
-    if(obj_player.x < self.x){
-        enemyDirection = -1;
-    }
-    
-    else{
-        enemyDirection = 1;
-    }
+    enemyChangeDirection()
     //move towards player untill in range
     if(abs(obj_player.x - self.x) > attackRange){
         strayCatMove()
@@ -95,5 +89,45 @@ if(state == 1){//approach player
 }
 
 if(state = 2){//combat
+	//Update direction
+	enemyChangeDirection()
+	//Roll Dice
+	var diceRoll = random_range(0, 1);
 	
+	//If player is attacking---------
+	if(obj_player.isAttacking){
+		if(diceRoll < 0.2 && canEvade){
+			//evade
+		}
+		
+		if(diceRoll < 0.5 && canDodge){
+			//block
+		}
+		
+		else{
+			//do nothing
+		}
+		
+	}
+	
+	//Else(Attack)---------
+	else{
+		if(diceRoll < 0.66 && canAttack){
+			//attack
+		}
+		
+		else if(diceRoll < 1 && canDash){
+			//dash
+		}
+	}
+	
+	//Reset to state 1
+	if(abs(obj_player.x - self.x) > attackRange){
+		state = 1;
+	}
+	
+	//Reset to state 0
+	if(!(obj_player.x > leftTerritoryBound && obj_player.x < rightTerritoryBound)){
+		state = 0;
+	}
 }
