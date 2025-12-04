@@ -30,6 +30,6 @@ else if (exit_timer >= 0) {
         audio_play_sound(snd_bkg_mus, 1, true);
 
         // Go back to your main game room
-        room_goto(Tutorial); // <-- replace with your main room name
+        room_goto(asset_get_index(load_data_playerRoom("playerData.ini"))); // <-- replace with your main room name
     }
 }

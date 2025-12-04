@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"brickBuilding",
-    "path":"folders/Sprites/Level Sprites/buildings/brickBuilding.yy",
+    "name":"redBrickBuilding",
+    "path":"folders/Sprites/Level Sprites/buildings/redBrickBuilding.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
