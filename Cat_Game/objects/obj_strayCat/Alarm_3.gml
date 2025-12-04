@@ -1,0 +1,1 @@
+strayCatActions(true);

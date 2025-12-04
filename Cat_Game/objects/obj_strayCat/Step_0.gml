@@ -1,4 +1,5 @@
 velocityY += obj_controller.gameGravity;
+image_xscale = enemyDirection;
 
 
 //check if y collision will occur
@@ -62,32 +63,84 @@ if(state == 0){//patrolling
 	if(enemyDirection == -1 && x <= leftTerritoryBound){
 		enemyDirection = 1;
 	}
-	
-	//move cat forward if no obstacle
-	var predictedX = x + enemyDirection * (velocityX + midWidth/5);
-	if(!place_meeting(predictedX, y, obj_collidable)){
-		x += (enemyDirection * velocityX);
-		image_xscale = enemyDirection;
-		isJumping = false;
+	strayCatMove();
+	//if within territory and within distance threshold
+	if((abs(obj_player.x - self.x) < playerDistanceThreshold)&&
+	(obj_player.x > leftTerritoryBound && obj_player.x < rightTerritoryBound)){
+		state = 1;
 	}
-	//if obstacle
-	else{
-		//if obstacle is jumpable
-		if(!place_meeting(predictedX, y - 100, obj_collidable)){
-			if(canJump){
-				canJump = false;
-				isJumping = true;
-				strayCatJump();
-				alarm[2] = jumpCooldown * room_speed;
-			}
-			else{
-				x += 0;//pause so cat can jump
-			}
+}
+
+
+if(state == 1){//approach player
+    //change direction towards player
+    enemyChangeDirection()
+    //move towards player untill in range
+    if(abs(obj_player.x - self.x) > attackRange){
+        strayCatMove()
+    }
+    else{
+        state = 2;
+    }
+    //reset to state0 if player leaves territory ONLY
+    if(!(obj_player.x > leftTerritoryBound && obj_player.x < rightTerritoryBound)){
+        state = 0;
+    }
+}
+
+if(state == 2){//combat
+	//Update direction
+	enemyChangeDirection()
+	//Roll Dice
+	var diceRoll = random_range(0, 1);
+	
+	//If player is attacking---------
+	if(obj_player.isAttacking){
+		if(diceRoll < 0.2 && canEvade){
+			//evade
+			strayCatActions(false);
+			//INSERT EVADE CODE HERE
+			strayCatCooldown(longCoolDown);
 		}
-		//if obstacle can not be jumped
+		
+		else if(diceRoll < 0.5 && canBlock){
+			//block
+			strayCatActions(false);
+			//INSERT BLOCK CODE HERE
+			strayCatCooldown(shortCoolDown);
+		}
+		
 		else{
-			enemyDirection *= -1;
-			isJumping = false;
+			//do nothing
 		}
+		
+	}
+	
+	//Else(Attack)---------
+	else{
+		if(diceRoll < 0.66 && canAttack){
+			//attack
+			strayCatActions(false);
+			//INSERT ATTACK CODE HERE
+			strayCatCooldown(shortCoolDown);
+		}
+		
+		else if(diceRoll < 1 && canDash){
+			//dash
+			strayCatActions(false);
+			//INSERT DASH CODE HERE
+			strayCatCooldown(longCoolDown);
+			
+		}
+	}
+	
+	//Reset to state 1
+	if(abs(obj_player.x - self.x) > attackRange){
+		state = 1;
+	}
+	
+	//Reset to state 0
+	if(!(obj_player.x > leftTerritoryBound && obj_player.x < rightTerritoryBound)){
+		state = 0;
 	}
 }
