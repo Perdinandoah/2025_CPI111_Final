@@ -68,7 +68,7 @@ if(isCharging){
 }
 
 if(isDashing){
-	instance_create_layer(x, y, "Instances", obj_playerDashBox)
+	instance_create_layer(x, y, "AttackBoxes", obj_playerDashBox)
 }
 
 //Jump-------------------------------------------------------

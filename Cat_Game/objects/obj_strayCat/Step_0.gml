@@ -90,7 +90,9 @@ if(state == 1){//approach player
 
 if(state == 2){//combat
 	//Update direction
-	enemyChangeDirection()
+	if(canMove){
+		enemyChangeDirection()
+	}
 	//Roll Dice
 	var diceRoll = random_range(0, 1);
 	
@@ -122,6 +124,10 @@ if(state == 2){//combat
 			//attack
 			strayCatActions(false);
 			//INSERT ATTACK CODE HERE
+			var hitBoxX = x + (enemyDirection * midWidth);
+			var hitBoxY = y;
+	
+			instance_create_layer(hitBoxX, hitBoxY, "AttackBoxes", obj_strayCatAttackBox);
 			strayCatCooldown(shortCoolDown);
 		}
 		
@@ -129,7 +135,15 @@ if(state == 2){//combat
 			//dash
 			strayCatActions(false);
 			//INSERT DASH CODE HERE
+			//compute distance
+			if(dashCharge > 1){
+				dashStepDistance = 25;
+	
+				//start dash movement
+				alarm[4] = 1
+			}
 			strayCatCooldown(longCoolDown);
+			
 			
 		}
 	}
