@@ -52,7 +52,7 @@ else if(state == 2){
 	if(y < targetY){
 		y += velocityY;
 		x += (velocityX * enemyDirection);
-		instance_create_layer(x ,y, "Instances", obj_pidgeonAttackBox);
+		instance_create_layer(x ,y, "AttackBoxes", obj_pidgeonAttackBox);
 	}
 	
 	else if(y >= targetY){
