@@ -102,13 +102,19 @@ if(state == 2){//combat
 			//evade
 			strayCatActions(false);
 			//INSERT EVADE CODE HERE
+	
+			//start evade movement
+			evadeSteps = evadeStepsDefault;
+			alarm[6] = 1;
+	
 			strayCatCooldown(longCoolDown);
 		}
 		
 		else if(diceRoll < 0.5 && canBlock){
 			//block
 			strayCatActions(false);
-			//INSERT BLOCK CODE HERE
+			isBlocking = true;
+			alarm[5] = shortCoolDown * room_speed;
 			strayCatCooldown(shortCoolDown);
 		}
 		
