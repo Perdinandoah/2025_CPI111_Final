@@ -39,6 +39,7 @@ function strayCatActions(givenBoolean){
 	canBlock = givenBoolean;
 	canEvade = givenBoolean;
 	canMove = givenBoolean;
+	
 }
 
 function strayCatCooldown(cooldown){
