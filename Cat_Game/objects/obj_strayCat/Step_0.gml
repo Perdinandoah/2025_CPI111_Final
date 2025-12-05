@@ -98,19 +98,8 @@ if(state == 2){//combat
 	
 	//If player is attacking---------
 	if(obj_player.isAttacking){
-		if(diceRoll < 0.2 && canEvade){
-			//evade
-			strayCatActions(false);
-			//INSERT EVADE CODE HERE
-	
-			//start evade movement
-			evadeSteps = evadeStepsDefault;
-			alarm[6] = 1;
-	
-			strayCatCooldown(longCoolDown);
-		}
 		
-		else if(diceRoll < 0.5 && canBlock){
+		if(diceRoll < 0.5 && canBlock){
 			//block
 			strayCatActions(false);
 			isBlocking = true;
@@ -124,12 +113,11 @@ if(state == 2){//combat
 		
 	}
 	
-	//Else(Attack)---------
+	//Else(Attack/evade)---------
 	else{
-		if(diceRoll < 0.66 && canAttack){
+		if(diceRoll < 0.5 && canAttack){
 			//attack
 			strayCatActions(false);
-			//INSERT ATTACK CODE HERE
 			var hitBoxX = x + (enemyDirection * midWidth);
 			var hitBoxY = y;
 	
@@ -137,20 +125,27 @@ if(state == 2){//combat
 			strayCatCooldown(shortCoolDown);
 		}
 		
-		else if(diceRoll < 1 && canDash){
+		else if(diceRoll < 0.80 && canDash){
 			//dash
 			strayCatActions(false);
-			//INSERT DASH CODE HERE
 			//compute distance
 			if(dashCharge > 1){
 				dashStepDistance = 25;
-	
 				//start dash movement
 				alarm[4] = 1
 			}
 			strayCatCooldown(longCoolDown);
 			
 			
+		}
+		else if(diceRoll < 1 && canEvade){
+			//evade
+			strayCatActions(false);
+			//start evade movement
+			evadeSteps = evadeStepsDefault;
+			alarm[6] = 1;
+	
+			strayCatCooldown(longCoolDown);
 		}
 	}
 	
