@@ -88,7 +88,7 @@ else if(state == 1){
 	if(distance_to_object(obj_player) < midWidth && canAttack == true){
 		canAttack = false;
 		audio_play_sound(snd_enemy_attack, 1, false);
-		instance_create_layer(x + (enemyDirection * midWidth), y, "AttackBoxes", obj_mouseAttackBox){
+		instance_create_layer(x + (enemyDirection * midWidth), y, "Instances", obj_mouseAttackBox){
 			alarm[1] = attackCooldown * room_speed;
 		}
 	}
