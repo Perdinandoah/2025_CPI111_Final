@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"obj_collidable",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_collidable",
   "overriddenProperties":[],
   "parent":{
-    "name":"environment",
-    "path":"folders/Objects/levelDesign/environment.yy",
+    "name":"solidCollidables",
+    "path":"folders/Objects/levelDesign/environment/solidCollidables.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -23,7 +25,10 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"xVelocity","filters":[],"listItems":[],"multiselect":false,"name":"xVelocity","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"yVelocity","filters":[],"listItems":[],"multiselect":false,"name":"yVelocity","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
