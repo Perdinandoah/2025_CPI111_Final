@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"fire_escape",
-    "path":"folders/Objects/levelDesign/environment/fire_escape.yy",
+    "path":"folders/Objects/levelDesign/environment/solidCollidables/fire_escape.yy",
   },
   "parentObjectId":{
     "name":"obj_collidable",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_fire_stairs",
-    "path":"sprites/spr_fire_stairs/spr_fire_stairs.yy",
+    "name":"spr_fire_obj_stairs",
+    "path":"sprites/spr_fire_obj_stairs/spr_fire_obj_stairs.yy",
   },
   "spriteMaskId":null,
   "visible":true,
