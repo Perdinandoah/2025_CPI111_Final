@@ -90,23 +90,20 @@ if(state == 1){//approach player
 
 if(state == 2){//combat
 	//Update direction
-	enemyChangeDirection()
+	if(canMove){
+		enemyChangeDirection()
+	}
 	//Roll Dice
 	var diceRoll = random_range(0, 1);
 	
 	//If player is attacking---------
 	if(obj_player.isAttacking){
-		if(diceRoll < 0.2 && canEvade){
-			//evade
-			strayCatActions(false);
-			//INSERT EVADE CODE HERE
-			strayCatCooldown(longCoolDown);
-		}
 		
-		else if(diceRoll < 0.5 && canBlock){
+		if(diceRoll < 0.5 && canBlock){
 			//block
 			strayCatActions(false);
-			//INSERT BLOCK CODE HERE
+			isBlocking = true;
+			alarm[5] = shortCoolDown * room_speed;
 			strayCatCooldown(shortCoolDown);
 		}
 		
@@ -116,21 +113,39 @@ if(state == 2){//combat
 		
 	}
 	
-	//Else(Attack)---------
+	//Else(Attack/evade)---------
 	else{
-		if(diceRoll < 0.66 && canAttack){
+		if(diceRoll < 0.5 && canAttack){
 			//attack
 			strayCatActions(false);
-			//INSERT ATTACK CODE HERE
+			var hitBoxX = x + (enemyDirection * midWidth);
+			var hitBoxY = y;
+	
+			instance_create_layer(hitBoxX, hitBoxY, "AttackBoxes", obj_strayCatAttackBox);
 			strayCatCooldown(shortCoolDown);
 		}
 		
-		else if(diceRoll < 1 && canDash){
+		else if(diceRoll < 0.80 && canDash){
 			//dash
 			strayCatActions(false);
-			//INSERT DASH CODE HERE
+			//compute distance
+			if(dashCharge > 1){
+				dashStepDistance = 25;
+				//start dash movement
+				alarm[4] = 1
+			}
 			strayCatCooldown(longCoolDown);
 			
+			
+		}
+		else if(diceRoll < 1 && canEvade){
+			//evade
+			strayCatActions(false);
+			//start evade movement
+			evadeSteps = evadeStepsDefault;
+			alarm[6] = 1;
+	
+			strayCatCooldown(longCoolDown);
 		}
 	}
 	
