@@ -91,6 +91,8 @@
     {"id":{"name":"obj_simoncontroller","path":"objects/obj_simoncontroller/obj_simoncontroller.yy",},},
     {"id":{"name":"obj_simongameInteractable","path":"objects/obj_simongameInteractable/obj_simongameInteractable.yy",},},
     {"id":{"name":"obj_strayCat","path":"objects/obj_strayCat/obj_strayCat.yy",},},
+    {"id":{"name":"obj_strayCatAttackBox","path":"objects/obj_strayCatAttackBox/obj_strayCatAttackBox.yy",},},
+    {"id":{"name":"obj_strayCatDashAttackBox","path":"objects/obj_strayCatDashAttackBox/obj_strayCatDashAttackBox.yy",},},
     {"id":{"name":"obj_testroomInteractable","path":"objects/obj_testroomInteractable/obj_testroomInteractable.yy",},},
     {"id":{"name":"laserminigameRoom","path":"rooms/laserminigameRoom/laserminigameRoom.yy",},},
     {"id":{"name":"Level_One","path":"rooms/Level_One/Level_One.yy",},},
@@ -177,7 +179,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
-    {"roomId":{"name":"Level_One","path":"rooms/Level_One/Level_One.yy",},},
+    {"roomId":{"name":"laserminigameRoom","path":"rooms/laserminigameRoom/laserminigameRoom.yy",},},
+    {"roomId":{"name":"simonminigame_room","path":"rooms/simonminigame_room/simonminigame_room.yy",},},
     {"roomId":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
     {"roomId":{"name":"laserminigameRoom","path":"rooms/laserminigameRoom/laserminigameRoom.yy",},},
     {"roomId":{"name":"simonminigame_room","path":"rooms/simonminigame_room/simonminigame_room.yy",},},
