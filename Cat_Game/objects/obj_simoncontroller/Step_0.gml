@@ -72,6 +72,6 @@ if (minigame_complete) {
     exit_timer++;
     if (exit_timer >= exit_delay) {
         // Go back to previous room or main game room
-        room_goto(Tutorial); 
+         room_goto(asset_get_index(load_data_playerRoom("playerData.ini")));
     }
 }
