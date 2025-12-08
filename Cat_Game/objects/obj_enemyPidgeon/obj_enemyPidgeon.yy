@@ -45,8 +45,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_pidgeonPlaceHolder",
-    "path":"sprites/spr_pidgeonPlaceHolder/spr_pidgeonPlaceHolder.yy",
+    "name":"spr_pidgeon",
+    "path":"sprites/spr_pidgeon/spr_pidgeon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

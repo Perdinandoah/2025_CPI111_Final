@@ -64,8 +64,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_mousePlaceHolder",
-    "path":"sprites/spr_mousePlaceHolder/spr_mousePlaceHolder.yy",
+    "name":"spr_mouse",
+    "path":"sprites/spr_mouse/spr_mouse.yy",
   },
   "spriteMaskId":null,
   "visible":true,
