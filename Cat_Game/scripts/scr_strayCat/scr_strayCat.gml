@@ -35,8 +35,9 @@ function strayCatActions(givenBoolean){
 	canDash = givenBoolean;
 	canBlock = givenBoolean;
 	canEvade = givenBoolean;
+	canMove = givenBoolean;
 }
 
 function strayCatCooldown(cooldown){
-	alarm[3] = cooldown;
+	alarm[3] = cooldown * room_speed;
 }
