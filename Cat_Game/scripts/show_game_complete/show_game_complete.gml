@@ -10,6 +10,12 @@ fn_show_game_complete = function() {
 
     // Increase global score
     global.score += 100;
+	
+	// Give small health boost to the player
+with (obj_player) {
+    health = clamp(health + 10, 0, 100); // +10 health, capped at 100
+}
+
 
     // Start exit timer
     minigame_complete = true;
