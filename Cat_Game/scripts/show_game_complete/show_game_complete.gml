@@ -1,4 +1,4 @@
-fn_show_game_complete = function() {
+wfn_show_game_complete = function() {
     for (var i = 0; i < array_length(buttons); i++) {
         var inst = buttons[i];
         if (instance_exists(inst)) instance_destroy(inst);
