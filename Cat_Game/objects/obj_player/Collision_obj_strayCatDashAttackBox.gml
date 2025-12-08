@@ -6,7 +6,7 @@ if(isBlocking == false){
 health -= obj_strayCat.dashDamage;
 }
 else{
-health -= (0.5 * obj_enemyMouse.dashDamage);
+health -= (0.5 * obj_strayCat.dashDamage);
 }
 
 //Invincibilty frames
