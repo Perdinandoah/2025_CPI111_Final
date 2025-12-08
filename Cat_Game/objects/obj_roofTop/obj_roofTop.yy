@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
   "%Name":"obj_roofTop",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_roofTop",
   "overriddenProperties":[],
   "parent":{
-    "name":"solidCollidables",
-    "path":"folders/Objects/levelDesign/environment/solidCollidables.yy",
+    "name":"environment",
+    "path":"folders/Objects/levelDesign/environment.yy",
   },
   "parentObjectId":{
     "name":"obj_collidable",

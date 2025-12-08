@@ -9,7 +9,7 @@ image_xscale = enemyDirection;
 
 //spawn attack box
 if(canAttack == 1){
-	instance_create_layer(x, y, "Instances", obj_batAttackBox);
+	instance_create_layer(x, y, "AttackBoxes", obj_batAttackBox);
 }
 
 //BEHAVIOUR--------------------------------------------------------------------
