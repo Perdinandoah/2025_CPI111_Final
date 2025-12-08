@@ -19,7 +19,6 @@
   "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"baac17ae-6798-4301-8562-e476577d108e","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"baac17ae-6798-4301-8562-e476577d108e","opacity":67.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"47bf5f0b-5b01-4d2c-a2fe-94c9a34207cd","blendMode":0,"displayName":"default","isLocked":false,"name":"47bf5f0b-5b01-4d2c-a2fe-94c9a34207cd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_box",

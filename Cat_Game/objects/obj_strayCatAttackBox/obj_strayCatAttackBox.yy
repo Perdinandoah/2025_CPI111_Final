@@ -1,13 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_collidable",
-  "eventList":[],
+  "%Name":"obj_strayCatAttackBox",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_collidable",
+  "name":"obj_strayCatAttackBox",
   "overriddenProperties":[],
   "parent":{
-    "name":"environment",
-    "path":"folders/Objects/levelDesign/environment.yy",
+    "name":"attackBoxes",
+    "path":"folders/Objects/attackBoxes.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_collider",
-    "path":"sprites/spr_collider/spr_collider.yy",
+    "name":"spr_atackBox",
+    "path":"sprites/spr_atackBox/spr_atackBox.yy",
   },
   "spriteMaskId":null,
   "visible":true,

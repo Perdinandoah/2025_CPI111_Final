@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
   "%Name":"obj_fire_platform",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_fire_platform",
   "overriddenProperties":[],
   "parent":{
     "name":"fire_escape",
-    "path":"folders/Objects/levelDesign/environment/solidCollidables/fire_escape.yy",
+    "path":"folders/Objects/levelDesign/environment/fire_escape.yy",
   },
   "parentObjectId":{
     "name":"obj_collidable",
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_fire_obj_platform",
-    "path":"sprites/spr_fire_obj_platform/spr_fire_obj_platform.yy",
+    "name":"spr_fire_platform",
+    "path":"sprites/spr_fire_platform/spr_fire_platform.yy",
   },
   "spriteMaskId":null,
   "visible":true,

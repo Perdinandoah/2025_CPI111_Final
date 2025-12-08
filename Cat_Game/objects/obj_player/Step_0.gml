@@ -39,8 +39,6 @@ else{ //ease the player against the wall
 }
 
 
-
-
 if(velocityY > 0 && inAir == true){
 	isFalling = true;
 }
@@ -60,7 +58,6 @@ if(y + sprite_height/2 >= room_height){
 
 //On death -------------------------------------------------------------------------------
 if(health <= 0){
-	save_player_data("playerData.ini", 330, 1740, room_get_name(Tutorial))
 	game_end();
 }
 
@@ -71,7 +68,7 @@ if(isCharging){
 }
 
 if(isDashing){
-	instance_create_layer(x, y, "Instances", obj_playerDashBox)
+	instance_create_layer(x, y, "AttackBoxes", obj_playerDashBox)
 }
 
 //Jump-------------------------------------------------------

@@ -6,8 +6,8 @@
   "name":"obj_ground",
   "overriddenProperties":[],
   "parent":{
-    "name":"solidCollidables",
-    "path":"folders/Objects/levelDesign/environment/solidCollidables.yy",
+    "name":"environment",
+    "path":"folders/Objects/levelDesign/environment.yy",
   },
   "parentObjectId":{
     "name":"obj_collidable",
