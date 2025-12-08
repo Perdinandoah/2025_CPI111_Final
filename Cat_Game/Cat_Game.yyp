@@ -100,6 +100,7 @@
     {"id":{"name":"spr_laserpointer","path":"sprites/spr_laserpointer/spr_laserpointer.yy",},},
     {"id":{"name":"spr_mouse","path":"sprites/spr_mouse/spr_mouse.yy",},},
     {"id":{"name":"spr_pidgeon","path":"sprites/spr_pidgeon/spr_pidgeon.yy",},},
+    {"id":{"name":"spr_pidgeonDive","path":"sprites/spr_pidgeonDive/spr_pidgeonDive.yy",},},
     {"id":{"name":"spr_playerJump","path":"sprites/spr_playerJump/spr_playerJump.yy",},},
     {"id":{"name":"spr_playerPounce","path":"sprites/spr_playerPounce/spr_playerPounce.yy",},},
     {"id":{"name":"spr_playerRunning","path":"sprites/spr_playerRunning/spr_playerRunning.yy",},},
