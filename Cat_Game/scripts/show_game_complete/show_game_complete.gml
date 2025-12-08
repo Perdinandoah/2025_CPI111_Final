@@ -1,4 +1,4 @@
-fn_show_game_complete = function() {
+wfn_show_game_complete = function() {
     for (var i = 0; i < array_length(buttons); i++) {
         var inst = buttons[i];
         if (instance_exists(inst)) instance_destroy(inst);
@@ -10,6 +10,12 @@ fn_show_game_complete = function() {
 
     // Increase global score
     global.score += 100;
+	
+	// Give small health boost to the player
+with (obj_player) {
+    health = clamp(health + 10, 0, 100); // +10 health, capped at 100
+}
+
 
     // Start exit timer
     minigame_complete = true;

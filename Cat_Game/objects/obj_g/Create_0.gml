@@ -3,3 +3,4 @@ flash_red = 0;  // wrong press
 flash_green = 0; // computer
 flash_end = 0;   // end-of-round white
 image_blend = c_white;
+flash_success = 0;

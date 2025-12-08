@@ -26,8 +26,7 @@ if (controller.player_turn && !controller.game_over) {
         if (controller.player_index >= array_length(seq)) {
             controller.player_turn = false;
 
-            // Trigger 3 white flashes for end-of-round
-            controller.fn_flash_all_buttons(3);
+      
             
             // Prepare next round or end game
             controller.current_round++;

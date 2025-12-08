@@ -1,4 +1,16 @@
 /// obj_simoncontroller – Step
+// ----- Failure pause before replay -----
+if (fail_timer > 0) {
+    fail_timer--;
+    if (fail_timer == 0) {
+        // Now actually restart the round
+        player_index     = 0;
+        playing_sequence = true;
+        flash_index      = 0;
+        flash_timer      = flash_time;
+    }
+    exit; // skip sequence playback while waiting
+}
 
 // ---------- Computer plays sequence ----------
 if (playing_sequence && !game_over) {
@@ -36,26 +48,6 @@ if (playing_sequence && !game_over) {
     }
 }
 
-// ---------- End-of-round white flashes ----------
-if (flash_count > 0) {
-    if (flash_timer <= 0) {
-
-        // Flash all buttons for one frame using flash_end
-        for (var i=0; i<array_length(buttons); i++) {
-            var inst = buttons[i];
-            if (instance_exists(inst)) inst.flash_end = flash_time;
-        }
-
-        flash_timer = flash_timer_between;
-        flash_count--;
-
-        // After last flash, start pause
-        if (flash_count == 0) {
-            pause_timer = post_flash_pause;
-        }
-    }
-    else flash_timer--;
-}
 
 
 // ---------- Pause before next round ----------

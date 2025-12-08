@@ -1,7 +1,8 @@
 /// obj_simoncontroller – Create
-if (audio_is_playing(snd_bkg_mus)) {
-    audio_pause_sound(snd_bkg_mus);
-}
+audio_stop_all()
+fail_delay = room_speed * 1.5; // 1.5 seconds pause before replaying
+fail_timer = 0;
+
 minigame_complete = false;
 exit_timer = 0;
 exit_delay = room_speed * 5; // 5 seconds
@@ -18,7 +19,7 @@ player_index  = 0;
 playing_sequence = false;
 flash_index      = 0;
 flash_timer      = 0;
-flash_time       = 15;  // frames for one flash
+flash_time       = 20;  // frames for one flash
 player_turn      = false;
 game_over        = false;
 
@@ -36,8 +37,8 @@ if (instance_exists(obj_g)) { array_push(buttons, instance_find(obj_g, 0)); arra
 
 // ---------- Flash system ----------
 flash_count = 0;             // remaining flashes for end-of-round
-flash_timer_between = 10;    // frames between flashes
-post_flash_pause = 15;       // frames to pause after end-of-round flashes
+flash_timer_between = 20;    // frames between flashes
+post_flash_pause = 30;       // frames to pause after end-of-round flashes
 pause_timer = 0;             // countdown
 
 // Generate random sequence
@@ -99,11 +100,13 @@ if (!variable_global_exists("score")) global.score = 0;
 
 // Increase by 100
 global.score += 100;
+// Give small health boost to the player
+with (obj_player) {
+    health = clamp(health + 10, 0, 100); // +10 health, capped at 100
+}
+
  // Stop all sounds (including minigame music)
         audio_stop_all();
-
-        // Start main game music again
-        audio_play_sound(snd_bkg_mus, 1, true);
 
 
     // Start exit timer

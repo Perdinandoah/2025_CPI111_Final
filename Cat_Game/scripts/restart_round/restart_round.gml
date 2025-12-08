@@ -1,7 +1,6 @@
 function restart_round() {
-    player_index = 0;
-    playing_sequence = true;
-    flash_index = 0;
-    flash_timer = flash_time;
+
+    fail_timer = fail_delay; // start failure delay
     player_turn = false;
+    playing_sequence = false;
 }
