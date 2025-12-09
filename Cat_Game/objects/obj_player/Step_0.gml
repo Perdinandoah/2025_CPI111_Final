@@ -121,6 +121,18 @@ else if(x != xprevious && sprCanChange){
 	sprite_index = spr_PlayerPlaceHolder;
 }
 
+else if(isBlocking && sprCanChange){
+	sprite_index = spr_playerBlock;
+}
+
+else if(isDashing && sprCanChange){
+	sprite_index = spr_playerDash;
+}
+
+else if(isEvading && sprCanChange){
+	sprite_index = spr_playerFalling;
+}
+
 else if (sprCanChange){
 	sprite_index = spr_playerIdle1;
 }

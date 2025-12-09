@@ -184,6 +184,7 @@
     {"id":{"name":"spr_pidgeonDive","path":"sprites/spr_pidgeonDive/spr_pidgeonDive.yy",},},
     {"id":{"name":"spr_pidgeonPlaceHolder","path":"sprites/spr_pidgeonPlaceHolder/spr_pidgeonPlaceHolder.yy",},},
     {"id":{"name":"spr_playerBlock","path":"sprites/spr_playerBlock/spr_playerBlock.yy",},},
+    {"id":{"name":"spr_playerDash","path":"sprites/spr_playerDash/spr_playerDash.yy",},},
     {"id":{"name":"spr_playerFalling","path":"sprites/spr_playerFalling/spr_playerFalling.yy",},},
     {"id":{"name":"spr_playerIdle","path":"sprites/spr_playerIdle/spr_playerIdle.yy",},},
     {"id":{"name":"spr_playerIdle1","path":"sprites/spr_playerIdle1/spr_playerIdle1.yy",},},
