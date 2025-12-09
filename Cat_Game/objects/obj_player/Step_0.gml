@@ -117,6 +117,10 @@ else if(isFalling){
 	sprite_index = spr_playerFalling;
 }
 
+else if(x != xprevious){
+	sprite_index = spr_PlayerPlaceHolder;
+}
+
 else{
 	sprite_index = spr_playerIdle1;
 }
