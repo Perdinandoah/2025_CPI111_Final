@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_PlayerPlaceHolder",
-  "bboxMode":0,
-  "bbox_bottom":81,
+  "bboxMode":2,
+  "bbox_bottom":85,
   "bbox_left":5,
-  "bbox_right":97,
+  "bbox_right":100,
   "bbox_top":12,
   "collisionKind":1,
   "collisionTolerance":0,

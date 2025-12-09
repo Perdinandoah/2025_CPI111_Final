@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_playerDash",
-  "bboxMode":0,
-  "bbox_bottom":63,
+  "bboxMode":2,
+  "bbox_bottom":85,
   "bbox_left":0,
-  "bbox_right":99,
+  "bbox_right":100,
   "bbox_top":30,
   "collisionKind":1,
   "collisionTolerance":0,

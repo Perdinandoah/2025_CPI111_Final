@@ -106,6 +106,10 @@ if(velocityY < 0 && !keyJumpHeld){
 	isJumping = false;
 	velocityY = max(velocityY, jumpPower/1.5);
 }
+
+if(canJump && keyJumpHeld && !isFalling){
+	isJumping = true;
+}
 	
 	
 //Sprite Animation management------------------------

@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_playerSwipe",
-  "bboxMode":0,
-  "bbox_bottom":80,
+  "bboxMode":2,
+  "bbox_bottom":85,
   "bbox_left":2,
-  "bbox_right":99,
+  "bbox_right":100,
   "bbox_top":22,
   "collisionKind":1,
   "collisionTolerance":0,
