@@ -109,3 +109,6 @@ if(velocityY < 0 && !keyJumpHeld){
 	
 	
 //Sprite Animation management------------------------
+if(){
+	
+}
