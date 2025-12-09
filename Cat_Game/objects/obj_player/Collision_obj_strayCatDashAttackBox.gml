@@ -9,6 +9,8 @@ else{
 health -= (0.5 * obj_strayCat.dashDamage);
 }
 
+playerKnockBack();
+
 //Invincibilty frames
 alarm[1] = iFrames;
 

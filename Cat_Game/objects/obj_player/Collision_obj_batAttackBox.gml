@@ -11,6 +11,8 @@ else{
 health -= (0.5 * obj_enemyBat.attackPower);
 }
 
+playerKnockBack();
+
 //Invincibilty frames
 alarm[1] = iFrames;
 
