@@ -1,0 +1,2 @@
+draw_set_font(FNT_Tutorial)
+	draw_text(212,288,"Credits\nSharlynne McKown - Main Puzzle Designer and Programmer, Sound and Music Composer\n" + "Ashton Grant - Main Level Designer and Programmer\n" + "Madison Garavaglia - Concept/General Artist, Programmer\n" + "Austin Melies - Main Platforming Designer, General Artist, Programmer")

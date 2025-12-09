@@ -80,7 +80,8 @@ if(y + sprite_height/2 >= room_height){
 //On death -------------------------------------------------------------------------------
 if(health <= 0){
 	save_player_data("playerData.ini", 330, 1740, room_get_name(Tutorial))
-	game_end();
+	health = 100
+	room_goto(title)
 }
 
 
