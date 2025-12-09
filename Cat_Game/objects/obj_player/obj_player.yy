@@ -98,8 +98,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_PlayerPlaceHolder",
-    "path":"sprites/spr_PlayerPlaceHolder/spr_PlayerPlaceHolder.yy",
+    "name":"spr_playerIdle1",
+    "path":"sprites/spr_playerIdle1/spr_playerIdle1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
