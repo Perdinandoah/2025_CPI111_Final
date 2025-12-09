@@ -33,6 +33,11 @@ if(showDir){
 	if(keyboard_check_pressed(ord("A")) || keyboard_check_pressed(ord("D"))){
 		showDir = false
 	}
+	if(!timerSet){
+	alarm[0] = timer * game_get_speed(gamespeed_fps)
+	alarm[1] = (timer + 1) * game_get_speed(gamespeed_fps)
+	timerSet = true
+	}
 }
 
 if(showBlock){
@@ -40,6 +45,11 @@ if(showBlock){
 	draw_text(512,288,"PRESS B TO BLOCK DAMAGE")
 	if(keyboard_check_pressed(ord("B"))){
 		showBlock = false
+	}
+	if(!timerSet){
+	alarm[0] = timer * game_get_speed(gamespeed_fps)
+	alarm[1] = (timer + 1) * game_get_speed(gamespeed_fps)
+	timerSet = true
 	}
 }
 if(showDash){
@@ -55,12 +65,22 @@ if(showJump){
 	if(keyboard_check_pressed(vk_space)){
 		showJump = false
 	}
+	if(!timerSet){
+	alarm[0] = timer * game_get_speed(gamespeed_fps)
+	alarm[1] = (timer + 1) * game_get_speed(gamespeed_fps)
+	timerSet = true
+	}
 }
 if(showAttack){
 	draw_set_font(FNT_Tutorial)
 	draw_text(512,288,"PRESS J TO ATTACK")
 	if(keyboard_check_pressed(ord("J"))){
 		showAttack = false
+	}
+	if(!timerSet){
+	alarm[0] = timer * game_get_speed(gamespeed_fps)
+	alarm[1] = (timer + 1) * game_get_speed(gamespeed_fps)
+	timerSet = true
 	}
 }
 if(showEvade){
@@ -69,11 +89,21 @@ if(showEvade){
 	if(keyboard_check_pressed(ord("E"))){
 		showEvade = false
 	}
+	if(!timerSet){
+	alarm[0] = timer * game_get_speed(gamespeed_fps)
+	alarm[1] = (timer + 1) * game_get_speed(gamespeed_fps)
+	timerSet = true
+	}
 }
 if(showInteract){
 	draw_set_font(FNT_Tutorial)
 	draw_text(512,288,"PRESS S TO INTERACT")
 	if(keyboard_check_pressed(ord("S"))){
 		showInteract = false
+	}
+	if(!timerSet){
+	alarm[0] = timer * game_get_speed(gamespeed_fps)
+	alarm[1] = (timer + 1) * game_get_speed(gamespeed_fps)
+	timerSet = true
 	}
 }
