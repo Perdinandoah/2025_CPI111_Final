@@ -92,6 +92,7 @@
     {"$GMObjectProperty":"v2","%Name":"dashCooldown","filters":[],"listItems":[],"multiselect":false,"name":"dashCooldown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"coyoteTimer","filters":[],"listItems":[],"multiselect":false,"name":"coyoteTimer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"coyoteTimerDefault","filters":[],"listItems":[],"multiselect":false,"name":"coyoteTimerDefault","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"knockbackDistance","filters":[],"listItems":[],"multiselect":false,"name":"knockbackDistance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"25","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
