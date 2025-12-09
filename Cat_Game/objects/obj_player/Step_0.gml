@@ -20,22 +20,41 @@ if(!place_meeting(x, predictedY, obj_collidable)){
 	y += velocityY;
 }
 else{ //ease the player against the wall
-	predictedY = y;
-	while(!place_meeting(x, predictedY, obj_collidable)){
-		predictedY += sign(velocityY);
-	}
-	//last addition caused a collision, move player back 1 pixel before that point
-	y = predictedY - sign(velocityY);
+	if(velocityY > 0){
+		predictedY = y;
+		while(!place_meeting(x, predictedY, obj_collidable)){
+			predictedY += sign(velocityY);
+		}
+		//last addition caused a collision, move player back 1 pixel before that point
+		y = predictedY - sign(velocityY);
 	
-	//flags
-	velocityY = 0;
-	onGround = true;
-	inAir = false;
-	isJumping = false;
-	isFalling = false;
-	canJump = true;
-	coyoteTimer = coyoteTimerDefault; //reset coyote timer when on ground
-	jumpPower = defaultJumpPower //reset jump power when on ground
+		//infinite headbutt glitch fix
+		if(velocityY < 0){
+			canJump = false;
+			onGround = false;
+		}
+		else{
+			canJump = true;
+			onGround = true;
+		}
+	
+		//flags
+		velocityY = 0;
+		onGround = true;
+		inAir = false;
+		isJumping = false;
+		isFalling = false;
+		canJump = true;
+		coyoteTimer = coyoteTimerDefault; //reset coyote timer when on ground
+		jumpPower = defaultJumpPower //reset jump power when on ground
+	}
+	if(velocityY < 0){
+		y -= 2 * velocityY;
+		canJump = false;
+		isJumping = false;
+		isFalling = true;
+	
+	}
 }
 
 
