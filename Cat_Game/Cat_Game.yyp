@@ -169,7 +169,6 @@
     {"id":{"name":"spr_strayCatJump","path":"sprites/spr_strayCatJump/spr_strayCatJump.yy",},},
     {"id":{"name":"spr_strayCatPlaceHolder","path":"sprites/spr_strayCatPlaceHolder/spr_strayCatPlaceHolder.yy",},},
     {"id":{"name":"spr_strayCatPounce","path":"sprites/spr_strayCatPounce/spr_strayCatPounce.yy",},},
-    {"id":{"name":"spr_strayCatSwipe","path":"sprites/spr_strayCatSwipe/spr_strayCatSwipe.yy",},},
     {"id":{"name":"spr_white_bricks_1","path":"sprites/spr_white_bricks_1/spr_white_bricks_1.yy",},},
     {"id":{"name":"spr_white_bricks_2","path":"sprites/spr_white_bricks_2/spr_white_bricks_2.yy",},},
     {"id":{"name":"spr_white_bricks","path":"sprites/spr_white_bricks/spr_white_bricks.yy",},},
