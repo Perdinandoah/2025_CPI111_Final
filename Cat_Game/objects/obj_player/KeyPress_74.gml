@@ -3,6 +3,12 @@
 
 if(canAttack && !isBlocking && !isEvading){
 	canAttack = false;
+	
+	//sprite change
+	sprCanChange = false;
+	sprite_index = spr_playerSwipe;
+	alarm[8] = 0.25 * room_speed;
+	
 	var hitBoxX = x + (playerDirection * midWidth);
 	var hitBoxY = y;
 	
