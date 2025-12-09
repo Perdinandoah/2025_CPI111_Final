@@ -109,6 +109,14 @@ if(velocityY < 0 && !keyJumpHeld){
 	
 	
 //Sprite Animation management------------------------
-if(){
-	
+if(velocityX = 4.5 && velocityY = 0){
+	sprite_index = spr_playerIdle;
+}
+
+else if(isJumping){
+	sprite_index = spr_playerJump;
+}
+
+else if(isFalling){
+	sprite_index = spr_playerFalling
 }
