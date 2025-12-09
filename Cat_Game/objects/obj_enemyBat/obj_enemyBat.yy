@@ -49,8 +49,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bat",
-    "path":"sprites/spr_bat/spr_bat.yy",
+    "name":"spr_batPlaceHolder",
+    "path":"sprites/spr_batPlaceHolder/spr_batPlaceHolder.yy",
   },
   "spriteMaskId":null,
   "visible":true,
